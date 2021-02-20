@@ -16,7 +16,8 @@ Sony Xperia 5 II [read: 5 mark 2] (PDX206)
 |                 Cameras | <plenty>                                             |
 +-------------------------+------------------------------------------------------+
 
-.. list-table::
+
+.. list-table:: UFS details
    :header-rows: 1
 
    * -
