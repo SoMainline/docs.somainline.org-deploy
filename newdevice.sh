@@ -32,7 +32,7 @@ if ! [ -d "source/platform/$1/$2" ]; then
 	sed -i s/PLATFORMNAME/${1^^}/g source/platform/$1/$2/index.rst
 	sed -i s/VENDORNAME/${2^}/g source/platform/$1/$2/index.rst
 	sed -i s/DEVICENAME/${3}/g source/platform/$1/$2/index.rst
-	echo "   $2/index.rst" >> source/platform/$1/$2/index.rst
+	echo "   $2/index.rst" >> source/platform/$1/$index.rst
 	sed -i s/:orphan://g source/platform/$1/$2/index.rst
 else
 	echo "--------------------------------------------------------------------------------------------------------------------------"
