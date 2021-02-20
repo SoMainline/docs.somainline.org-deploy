@@ -1,3 +1,4 @@
+# Author: Konrad Dybcio
 # $1 - Platform name
 # $2 - Vendor name
 # $3 - Device name
