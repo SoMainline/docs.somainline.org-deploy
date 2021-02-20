@@ -10,6 +10,7 @@ SoMainline Docs
 
    platform/msm8996/index.rst
    platform/msm8998/index.rst
+   platform/sm8250/index.rst
 
 .. toctree::
    :hidden:
