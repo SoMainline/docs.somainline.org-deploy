@@ -18,12 +18,14 @@ Please keep the repo sorted like so::
 
     ├─ README.rst
     └─ source
-       ├─ socname.md
-       ├─ additionalinfo.md
-       └─ devicename
-          ├─ devicename.md
-          ├─ devicetree.dts
-          └─ picture.png
+       └─ platform
+          └─ socname.md
+             ├─ index.rst
+             └─ vendorname
+                └─ devicename
+                   ├─ index.rst
+                   ├─ devicetree.dts
+                   └─ picture.png
 
 Contributing
 ------------
