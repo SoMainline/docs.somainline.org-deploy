@@ -1,5 +1,5 @@
-SM8250
-=======
+SM8250 (kona)
+=============
 
 SoC info goes here
 
