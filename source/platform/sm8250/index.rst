@@ -1,7 +1,7 @@
 sm8250
 =======
 
-Soc info goes here
+SoC info goes here
 
 .. toctree::
    :maxdepth: 1

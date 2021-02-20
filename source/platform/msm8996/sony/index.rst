@@ -1,7 +1,7 @@
 Sony msm8996 (tone)
 ===================
 
-Soc information goes here
+SoC information goes here
 
 .. toctree::
    :maxdepth: 1

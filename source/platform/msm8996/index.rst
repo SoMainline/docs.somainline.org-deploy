@@ -1,7 +1,7 @@
 msm8996
 =======
 
-Soc information goes here
+SoC information goes here
 
 .. toctree::
    :maxdepth: 1

@@ -1,7 +1,7 @@
 Sony MSM8998 (Yoshino)
 ===================
 
-Soc information goes here
+SoC information goes here
 
 .. toctree::
    :maxdepth: 1
