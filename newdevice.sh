@@ -11,7 +11,7 @@ if [ -z "$4" ]; then
 fi
 
 if [ -z "$1" ] || [ -z "$2" ] || [ -z "$3" ]; then
-	echo "Usage: ./newplatform.sh platformname vendorname devicename" && exit 1
+	echo "Usage: ./newplatform.sh platformname vendorname devicename [1 for debug]" && exit 1
 fi
 
 if ! [ -d "source/platform/$1" ]; then
