@@ -1,5 +1,5 @@
 Sony MSM8998 (Yoshino)
-===================
+======================
 
 SoC information goes here
 
