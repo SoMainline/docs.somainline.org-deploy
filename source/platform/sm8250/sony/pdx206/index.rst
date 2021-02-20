@@ -13,9 +13,36 @@ Sony Xperia 5 II [read: 5 mark 2] (PDX206)
 +-------------------------+------------------------------------------------------+
 | Shipped Android Version | 10                                                   |
 +-------------------------+------------------------------------------------------+
-|                 Cameras | <plenty>                                             |
-+-------------------------+------------------------------------------------------+
 
+
+.. list-table:: Camera details
+   :header-rows: 1
+
+   * -
+     - Model
+     - Manufacturer
+     - Native Resolution
+     - Quirks
+   * - Main
+     - IMX557_cervin
+     - Sony
+     - 4032x3024?
+     - .
+   * - Wide
+     - S5K3T2_cervin
+     - Samsung
+     - 4032x3024?
+     - .
+   * - Zoom
+     - IMX363_cervin
+     - Sony
+     - 4288x3216?
+     - .
+   * - Front
+     - S5K4H7_rose
+     - Samsung
+     - 3264x2488?
+     - .
 
 .. list-table:: UFS details
    :header-rows: 1
