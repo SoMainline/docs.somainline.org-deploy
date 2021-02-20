@@ -1,5 +1,5 @@
 VENDORNAME PLATFORMNAME (CHANGE CODENAME if exists)
-===================
+===================================================
 
 Platform information goes here.
 
