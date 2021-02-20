@@ -8,6 +8,7 @@ SoMainline Docs
    :maxdepth: 1
    :caption: Platforms
 
+   platform/msm8994/index.rst
    platform/msm8996/index.rst
    platform/msm8998/index.rst
    platform/sm8250/index.rst
