@@ -1,5 +1,5 @@
-MSM8998
-=======
+MSM8998 (cobalt)
+================
 
 SoC info goes here
 
