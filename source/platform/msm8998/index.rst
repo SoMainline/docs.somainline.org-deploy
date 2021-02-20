@@ -1,4 +1,9 @@
-msm8998
+MSM8998
 =======
 
-Soc info goes here
+SoC info goes here
+
+.. toctree::
+   :maxdepth: 1
+
+   sony/index.rst
