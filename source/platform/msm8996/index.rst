@@ -1,5 +1,5 @@
-MSM8996
-=======
+MSM8996 (thulium)
+=================
 
 SoC information goes here
 
