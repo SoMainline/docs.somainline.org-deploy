@@ -1,4 +1,4 @@
-sm8250
+SM8250
 =======
 
 SoC info goes here

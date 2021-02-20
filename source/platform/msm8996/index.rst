@@ -1,4 +1,4 @@
-msm8996
+MSM8996
 =======
 
 SoC information goes here
