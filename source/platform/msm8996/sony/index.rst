@@ -1,4 +1,4 @@
-Sony MSM8996 (tone)
+Sony MSM8996 (Tone)
 ===================
 
 SoC information goes here
