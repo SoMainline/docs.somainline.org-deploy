@@ -1,6 +1,6 @@
 VENDORNAME PLATFORMNAME (CHANGE CODENAME if exists)
 ===================================================
-
+:orphan:
 Platform information goes here.
 
 .. toctree::
