@@ -63,7 +63,7 @@ Sony Xperia 1 II [read: 1 mark 2] (PDX203)
      - ?
      - ?
    * - 256GB
-     - ?
-     - ?
+     - KLUEG8UHDB-C2D1
+     - 01ce (Samsung)
      - ?
      - ?
