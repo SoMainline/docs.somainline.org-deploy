@@ -6,6 +6,8 @@ This repository is a place for all the knowledge about our SoCs and devices that
 Building
 --------
 
+Install ``python-sphinx`` and ``python-sphinx-rtd-theme``.
+
 Run ``make html`` and open ``build/html/index.html`` in your browser.
 
 To create pretty URLs without the ``.html`` suffix, use ``make dirhtml``.
@@ -26,6 +28,13 @@ Please keep the repo sorted like so::
                    ├─ index.rst
                    ├─ devicetree.dts
                    └─ picture.png
+
+Editing
+-------
+Documentation is written in `reStructuredText <https://en.wikipedia.org/wiki/ReStructuredText>`_.
+A good introduction is the `reStructuredText Primer <https://www.sphinx-doc.org/en/master/usage/restructuredtext/basics.html>`_ from Sphinx.
+
+To add a new device, please run ``newdevice.sh``.
 
 Contributing
 ------------
