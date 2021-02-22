@@ -1,4 +1,4 @@
-MSM8956 (CHANGE CODENAME)
+MSM8956 (Eldarion)
 =========================
 
 SoC info goes here.
