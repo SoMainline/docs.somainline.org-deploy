@@ -8,7 +8,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>Maintainer Templates &mdash; SoMainline Docs  documentation</title>
+  <title>Resources &mdash; SoMainline Docs  documentation</title>
   
 
   
@@ -36,7 +36,9 @@
   <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
   <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
     <link rel="index" title="Index" href="../genindex/" />
-    <link rel="search" title="Search" href="../search/" /> 
+    <link rel="search" title="Search" href="../search/" />
+    <link rel="next" title="Sister Sites" href="sister-sites/" />
+    <link rel="prev" title="Porting" href="../guides/porting/" /> 
 </head>
 
 <body class="wy-body-for-nav">
@@ -152,15 +154,15 @@
 <li class="toctree-l1"><a class="reference internal" href="../guides/porting/">Porting</a></li>
 </ul>
 <p class="caption"><span class="caption-text">Resources</span></p>
-<ul>
-<li class="toctree-l1"><a class="reference internal" href="../resources/">Overview</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="../resources/#build-scripts">Build scripts</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../resources/#flashing-latest-stock-firmware">Flashing latest stock firmware</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../resources/#stock-firmware-dumps">Stock firmware dumps</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../resources/#mainlining-notes">Mainlining Notes</a></li>
+<ul class="current">
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Overview</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#build-scripts">Build scripts</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#flashing-latest-stock-firmware">Flashing latest stock firmware</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#stock-firmware-dumps">Stock firmware dumps</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#mainlining-notes">Mainlining Notes</a></li>
 </ul>
 </li>
-<li class="toctree-l1"><a class="reference internal" href="../resources/sister-sites/">Sister Sites</a></li>
+<li class="toctree-l1"><a class="reference internal" href="sister-sites/">Sister Sites</a></li>
 </ul>
 
             
@@ -206,13 +208,13 @@
     
       <li><a href="../">Docs</a> &raquo;</li>
         
-      <li>Maintainer Templates</li>
+      <li>Resources</li>
     
     
       <li class="wy-breadcrumbs-aside">
         
             
-            <a href="../_sources/maintainer-templates.rst.txt" rel="nofollow"> View page source</a>
+            <a href="../_sources/resources/index.rst.txt" rel="nofollow"> View page source</a>
           
         
       </li>
@@ -225,29 +227,39 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
             
-  <div class="section" id="maintainer-templates">
-<h1>Maintainer Templates<a class="headerlink" href="#maintainer-templates" title="Permalink to this headline">¶</a></h1>
-<p>Hopefully useful…</p>
-<div class="section" id="known-quirks">
-<h2>Known quirks<a class="headerlink" href="#known-quirks" title="Permalink to this headline">¶</a></h2>
-<p>For: <code class="docutils literal notranslate"><span class="pre">&lt;platform&gt;.rst</span></code>:</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">+--------------------------------------+</span>
-<span class="o">|</span> <span class="n">Name</span>  <span class="o">|</span> <span class="n">Version</span>       <span class="o">|</span> <span class="n">Known</span> <span class="n">quirks</span> <span class="o">|</span>
-<span class="o">+======================================+</span>
-<span class="o">|</span> <span class="n">camss</span> <span class="o">|</span> <span class="n">v4</span><span class="o">.</span><span class="n">something</span>  <span class="o">|</span> <span class="o">-</span>            <span class="o">|</span>
-<span class="o">+--------------------------------------+</span>
-<span class="o">|</span> <span class="n">tsens</span> <span class="o">|</span> <span class="n">v2</span><span class="o">.</span><span class="n">something</span>  <span class="o">|</span> <span class="o">-</span>            <span class="o">|</span>
-<span class="o">+--------------------------------------+</span>
-<span class="o">|</span> <span class="n">ufshc</span> <span class="o">|</span> <span class="n">vwhatever</span>     <span class="o">|</span> <span class="n">sony</span> <span class="n">why</span>     <span class="o">|</span>
-<span class="o">|</span>       <span class="o">|</span>               <span class="o">|</span>              <span class="o">|</span>
-<span class="o">|</span>       <span class="o">|</span>               <span class="o">|</span> <span class="n">btw</span><span class="p">:</span>         <span class="o">|</span>
-<span class="o">|</span>       <span class="o">|</span>               <span class="o">|</span> <span class="n">contents</span>     <span class="o">|</span>
-<span class="o">|</span>       <span class="o">|</span>               <span class="o">|</span> <span class="n">can</span> <span class="n">be</span>       <span class="o">|</span>
-<span class="o">|</span>       <span class="o">|</span>               <span class="o">|</span> <span class="n">multiline</span>    <span class="o">|</span>
-<span class="o">+--------------------------------------+</span>
-</pre></div>
+  <div class="section" id="resources">
+<h1>Resources<a class="headerlink" href="#resources" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="build-scripts">
+<h2>Build scripts<a class="headerlink" href="#build-scripts" title="Permalink to this headline">¶</a></h2>
+<p>Tools that will help your development progress.</p>
+<ul class="simple">
+<li><a class="reference external" href="https://github.com/MarijnS95/oot">Out-Of-Tree kernel build scripts</a></li>
+<li><a class="reference external" href="https://github.com/stefanhh0/aosp-10">AOSP 10 build script</a></li>
+<li><a class="reference external" href="https://github.com/stefanhh0/sodp">AOSP 11 script and helpers</a></li>
+<li><a class="reference external" href="https://github.com/chris42/android_build">Scripts and docker setup to build Sony AOSP</a></li>
+</ul>
 </div>
-<p><a class="reference external" href="https://www.sphinx-doc.org/en/master/usage/restructuredtext/basics.html?highlight=comment#tables">Table documentation</a></p>
+<div class="section" id="flashing-latest-stock-firmware">
+<h2>Flashing latest stock firmware<a class="headerlink" href="#flashing-latest-stock-firmware" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><a class="reference external" href="http://www.flashtool.net">Community</a>
+(<a class="reference external" href="https://github.com/androxyde/flashtool">GitHub</a>)
+(<a class="reference external" href="https://sx.ix5.org/files/flashtool/Linux">releases mirror</a>)</li>
+<li><a class="reference external" href="https://developer.sony.com/develop/open-devices/get-started/flash-tool">Sony Flashtool “Emma”</a> (Windows-only)</li>
+</ul>
+</div>
+<div class="section" id="stock-firmware-dumps">
+<h2>Stock firmware dumps<a class="headerlink" href="#stock-firmware-dumps" title="Permalink to this headline">¶</a></h2>
+<p><a class="reference external" href="https://git.rip/dumps/sony">Sony dumps</a></p>
+</div>
+<div class="section" id="mainlining-notes">
+<h2>Mainlining Notes<a class="headerlink" href="#mainlining-notes" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><a class="reference external" href="https://wiki.postmarketos.org/wiki/Mainlining">pmos Mainlining article</a></li>
+<li><a class="reference external" href="https://wiki.postmarketos.org/wiki/Qualcomm_Snapdragon_660_(SDM660)">SDM660 Mainlining article</a></li>
+<li><a class="reference external" href="https://github.com/SoMainline/LinuxMobileNotes">Notes for Linux on mobile in general</a></li>
+<li><a class="reference external" href="https://github.com/SoMainline/MainlineAndroidPorting">Common Mainline porting issues and fixes</a></li>
+</ul>
 </div>
 </div>
 
@@ -256,6 +268,15 @@
            
           </div>
           <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="sister-sites/" class="btn btn-neutral float-right" title="Sister Sites" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="../guides/porting/" class="btn btn-neutral float-left" title="Porting" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
   
 
   <hr/>

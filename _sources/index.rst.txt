@@ -27,6 +27,14 @@ SoMainline Docs
 
    guides/porting.rst
 
+.. toctree::
+   :hidden:
+   :maxdepth: 1
+   :caption: Resources
+
+   Overview <resources/index.rst>
+   resources/sister-sites.rst
+
 
 Open Source Hardware Documentation
 ----------------------------------

@@ -3,11 +3,6 @@ Sony Xperia XZ (kagura)
 
 The best device out there. Totally not cursed.
 
-DTS File
---------
-
-See :download:`msm8996-kagura.dts <msm8996-kagura.dts>`.
-
 .. image:: sony-xperia-xz.jpg
 
 *TTC? Utter one more word and I'll have you hanged!*
