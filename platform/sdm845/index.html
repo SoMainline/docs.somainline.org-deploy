@@ -8,7 +8,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>MSM8994 (Plutonium) &mdash; SoMainline Docs  documentation</title>
+  <title>SDM845 (Napali) &mdash; SoMainline Docs  documentation</title>
   
 
   
@@ -37,8 +37,8 @@
   <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
     <link rel="index" title="Index" href="../../genindex/" />
     <link rel="search" title="Search" href="../../search/" />
-    <link rel="next" title="MSM8996 (Thulium)" href="../msm8996/" />
-    <link rel="prev" title="MSM8992 (codename?)" href="../msm8992/" /> 
+    <link rel="next" title="Sony SDM845 (Tama)" href="sony/" />
+    <link rel="prev" title="Sony Xperia XA2 (Pioneer)" href="../sdm630/sony/pioneer/" /> 
 </head>
 
 <body class="wy-body-for-nav">
@@ -100,7 +100,7 @@
 <li class="toctree-l1"><a class="reference internal" href="../msm8992/">MSM8992 (codename?)</a><ul class="simple">
 </ul>
 </li>
-<li class="toctree-l1 current"><a class="current reference internal" href="#">MSM8994 (Plutonium)</a><ul class="simple">
+<li class="toctree-l1"><a class="reference internal" href="../msm8994/">MSM8994 (Plutonium)</a><ul class="simple">
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="../msm8996/">MSM8996 (Thulium)</a><ul>
@@ -125,10 +125,10 @@
 </li>
 </ul>
 </li>
-<li class="toctree-l1"><a class="reference internal" href="../sdm845/">SDM845 (Napali)</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="../sdm845/sony/">Sony SDM845 (Tama)</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="../sdm845/sony/apollo/">Sony Xperia XZ2 Compact (Apollo)</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="../sdm845/sony/apollo/#partitions">Partitions</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">SDM845 (Napali)</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="sony/">Sony SDM845 (Tama)</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="sony/apollo/">Sony Xperia XZ2 Compact (Apollo)</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="sony/apollo/#partitions">Partitions</a></li>
 </ul>
 </li>
 </ul>
@@ -218,13 +218,13 @@
     
       <li><a href="../../">Docs</a> &raquo;</li>
         
-      <li>MSM8994 (Plutonium)</li>
+      <li>SDM845 (Napali)</li>
     
     
       <li class="wy-breadcrumbs-aside">
         
             
-            <a href="../../_sources/platform/msm8994/index.rst.txt" rel="nofollow"> View page source</a>
+            <a href="../../_sources/platform/sdm845/index.rst.txt" rel="nofollow"> View page source</a>
           
         
       </li>
@@ -237,77 +237,14 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
             
-  <div class="section" id="msm8994-plutonium">
-<h1>MSM8994 (Plutonium)<a class="headerlink" href="#msm8994-plutonium" title="Permalink to this headline">¶</a></h1>
-<p>This SoC was deemed to fail due to release-time software. At first, it literally barely worked, but with BSP updates it got stabler, cooler and more energy efficient. First flagship SoC to feature A4xx (A430 in this case) and first flagship ARM64 design from Qualcomm.</p>
-<div class="line-block">
-<div class="line">v1 - Unreleased/internal, vastly different from prod</div>
-<div class="line">v2 - Early production(?)</div>
-<div class="line">v2.1 - Final, late prod SKU</div>
-</div>
+  <div class="section" id="sdm845-napali">
+<h1>SDM845 (Napali)<a class="headerlink" href="#sdm845-napali" title="Permalink to this headline">¶</a></h1>
+<p>SoC info goes here.</p>
 <div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="sony/">Sony SDM845 (Tama)</a></li>
+</ul>
 </div>
-<table border="1" class="docutils" id="id1">
-<caption><span class="caption-text">Camera HW</span><a class="headerlink" href="#id1" title="Permalink to this table">¶</a></caption>
-<colgroup>
-<col width="25%" />
-<col width="25%" />
-<col width="25%" />
-<col width="25%" />
-</colgroup>
-<thead valign="bottom">
-<tr class="row-odd"><th class="head">Component</th>
-<th class="head">Revision</th>
-<th class="head">Quantity</th>
-<th class="head">Quirks</th>
-</tr>
-</thead>
-<tbody valign="top">
-<tr class="row-even"><td>CSID</td>
-<td>v3.1</td>
-<td>4</td>
-<td>.</td>
-</tr>
-<tr class="row-odd"><td>CSIPHY</td>
-<td>v3.1.1</td>
-<td>3</td>
-<td>.</td>
-</tr>
-<tr class="row-even"><td>ISPIF</td>
-<td>v3.0</td>
-<td>1</td>
-<td>.</td>
-</tr>
-<tr class="row-odd"><td>VFE</td>
-<td>v4.6</td>
-<td>2</td>
-<td>.</td>
-</tr>
-</tbody>
-</table>
-<table border="1" class="docutils" id="id2">
-<caption><span class="caption-text">Various HW</span><a class="headerlink" href="#id2" title="Permalink to this table">¶</a></caption>
-<colgroup>
-<col width="25%" />
-<col width="25%" />
-<col width="25%" />
-<col width="25%" />
-</colgroup>
-<thead valign="bottom">
-<tr class="row-odd"><th class="head">Component</th>
-<th class="head">Revision</th>
-<th class="head">Quantity</th>
-<th class="head">Quirks</th>
-</tr>
-</thead>
-<tbody valign="top">
-<tr class="row-even"><td>TSENS</td>
-<td>v1.2</td>
-<td>1x16 sensors</td>
-<td>Custom slope calculation algo</td>
-</tr>
-</tbody>
-</table>
 </div>
 
 
@@ -318,10 +255,10 @@
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="../msm8996/" class="btn btn-neutral float-right" title="MSM8996 (Thulium)" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+        <a href="sony/" class="btn btn-neutral float-right" title="Sony SDM845 (Tama)" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
       
       
-        <a href="../msm8992/" class="btn btn-neutral float-left" title="MSM8992 (codename?)" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+        <a href="../sdm630/sony/pioneer/" class="btn btn-neutral float-left" title="Sony Xperia XA2 (Pioneer)" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
       
     </div>
   

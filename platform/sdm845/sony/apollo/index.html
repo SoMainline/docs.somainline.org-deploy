@@ -8,7 +8,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>Sony Xperia X Performance (dora) &mdash; SoMainline Docs  documentation</title>
+  <title>Sony Xperia XZ2 Compact (Apollo) &mdash; SoMainline Docs  documentation</title>
   
 
   
@@ -37,8 +37,8 @@
   <link rel="stylesheet" href="../../../../_static/pygments.css" type="text/css" />
     <link rel="index" title="Index" href="../../../../genindex/" />
     <link rel="search" title="Search" href="../../../../search/" />
-    <link rel="next" title="Sony Xperia XZ (kagura)" href="../kagura/" />
-    <link rel="prev" title="Sony MSM8996 (Tone)" href="../" /> 
+    <link rel="next" title="SM6125 (Trinket)" href="../../../sm6125/" />
+    <link rel="prev" title="Sony SDM845 (Tama)" href="../" /> 
 </head>
 
 <body class="wy-body-for-nav">
@@ -103,10 +103,10 @@
 <li class="toctree-l1"><a class="reference internal" href="../../../msm8994/">MSM8994 (Plutonium)</a><ul class="simple">
 </ul>
 </li>
-<li class="toctree-l1 current"><a class="reference internal" href="../../">MSM8996 (Thulium)</a><ul class="current">
-<li class="toctree-l2 current"><a class="reference internal" href="../">Sony MSM8996 (Tone)</a><ul class="current">
-<li class="toctree-l3 current"><a class="current reference internal" href="#">Sony Xperia X Performance (dora)</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../kagura/">Sony Xperia XZ (kagura)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../msm8996/">MSM8996 (Thulium)</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../../msm8996/sony/">Sony MSM8996 (Tone)</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../../msm8996/sony/dora/">Sony Xperia X Performance (dora)</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../msm8996/sony/kagura/">Sony Xperia XZ (kagura)</a></li>
 </ul>
 </li>
 </ul>
@@ -125,10 +125,10 @@
 </li>
 </ul>
 </li>
-<li class="toctree-l1"><a class="reference internal" href="../../../sdm845/">SDM845 (Napali)</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="../../../sdm845/sony/">Sony SDM845 (Tama)</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="../../../sdm845/sony/apollo/">Sony Xperia XZ2 Compact (Apollo)</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="../../../sdm845/sony/apollo/#partitions">Partitions</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="../../">SDM845 (Napali)</a><ul class="current">
+<li class="toctree-l2 current"><a class="reference internal" href="../">Sony SDM845 (Tama)</a><ul class="current">
+<li class="toctree-l3 current"><a class="current reference internal" href="#">Sony Xperia XZ2 Compact (Apollo)</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#partitions">Partitions</a></li>
 </ul>
 </li>
 </ul>
@@ -218,17 +218,17 @@
     
       <li><a href="../../../../">Docs</a> &raquo;</li>
         
-          <li><a href="../../">MSM8996 (Thulium)</a> &raquo;</li>
+          <li><a href="../../">SDM845 (Napali)</a> &raquo;</li>
         
-          <li><a href="../">Sony MSM8996 (Tone)</a> &raquo;</li>
+          <li><a href="../">Sony SDM845 (Tama)</a> &raquo;</li>
         
-      <li>Sony Xperia X Performance (dora)</li>
+      <li>Sony Xperia XZ2 Compact (Apollo)</li>
     
     
       <li class="wy-breadcrumbs-aside">
         
             
-            <a href="../../../../_sources/platform/msm8996/sony/dora/index.rst.txt" rel="nofollow"> View page source</a>
+            <a href="../../../../_sources/platform/sdm845/sony/apollo/index.rst.txt" rel="nofollow"> View page source</a>
           
         
       </li>
@@ -241,11 +241,272 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
             
-  <div class="section" id="sony-xperia-x-performance-dora">
-<h1>Sony Xperia X Performance (dora)<a class="headerlink" href="#sony-xperia-x-performance-dora" title="Permalink to this headline">¶</a></h1>
-<div class="admonition note">
-<p class="first admonition-title">Note</p>
-<p class="last">TBD</p>
+  <div class="section" id="sony-xperia-xz2-compact-apollo">
+<h1>Sony Xperia XZ2 Compact (Apollo)<a class="headerlink" href="#sony-xperia-xz2-compact-apollo" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="partitions">
+<h2>Partitions<a class="headerlink" href="#partitions" title="Permalink to this headline">¶</a></h2>
+<p><code class="docutils literal notranslate"><span class="pre">sda</span></code> partitions:</p>
+<table border="1" class="docutils">
+<colgroup>
+<col width="22%" />
+<col width="78%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Part</th>
+<th class="head">Label</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td>1</td>
+<td>TA</td>
+</tr>
+<tr class="row-odd"><td>2</td>
+<td>LTALabel</td>
+</tr>
+<tr class="row-even"><td>3</td>
+<td>xflkeystore</td>
+</tr>
+<tr class="row-odd"><td>4</td>
+<td>xflkeystorebak</td>
+</tr>
+<tr class="row-even"><td>5</td>
+<td>persist</td>
+</tr>
+<tr class="row-odd"><td>6</td>
+<td>ssd</td>
+</tr>
+<tr class="row-even"><td>7</td>
+<td>devinfo</td>
+</tr>
+<tr class="row-odd"><td>8</td>
+<td>ddr</td>
+</tr>
+<tr class="row-even"><td>9</td>
+<td>aop_a</td>
+</tr>
+<tr class="row-odd"><td>10</td>
+<td>tz_a</td>
+</tr>
+<tr class="row-even"><td>11</td>
+<td>hyp_a</td>
+</tr>
+<tr class="row-odd"><td>12</td>
+<td>abl_a</td>
+</tr>
+<tr class="row-even"><td>13</td>
+<td>keymaster_a</td>
+</tr>
+<tr class="row-odd"><td>14</td>
+<td>cmnlib_a</td>
+</tr>
+<tr class="row-even"><td>15</td>
+<td>cmnlib64_a</td>
+</tr>
+<tr class="row-odd"><td>16</td>
+<td>devcfg_a</td>
+</tr>
+<tr class="row-even"><td>17</td>
+<td>qupfw_a</td>
+</tr>
+<tr class="row-odd"><td>18</td>
+<td>xfl_a</td>
+</tr>
+<tr class="row-even"><td>19</td>
+<td>tzxflattest_a</td>
+</tr>
+<tr class="row-odd"><td>20</td>
+<td>tzxfl_a</td>
+</tr>
+<tr class="row-even"><td>21</td>
+<td>aop_b</td>
+</tr>
+<tr class="row-odd"><td>22</td>
+<td>tz_b</td>
+</tr>
+<tr class="row-even"><td>23</td>
+<td>hyp_b</td>
+</tr>
+<tr class="row-odd"><td>24</td>
+<td>abl_b</td>
+</tr>
+<tr class="row-even"><td>25</td>
+<td>keymaster_b</td>
+</tr>
+<tr class="row-odd"><td>26</td>
+<td>cmnlib_b</td>
+</tr>
+<tr class="row-even"><td>27</td>
+<td>cmnlib64_b</td>
+</tr>
+<tr class="row-odd"><td>28</td>
+<td>devcfg_b</td>
+</tr>
+<tr class="row-even"><td>29</td>
+<td>qupfw_b</td>
+</tr>
+<tr class="row-odd"><td>30</td>
+<td>xfl_b</td>
+</tr>
+<tr class="row-even"><td>31</td>
+<td>tzxflattest_b</td>
+</tr>
+<tr class="row-odd"><td>32</td>
+<td>tzxfl_b</td>
+</tr>
+<tr class="row-even"><td>33</td>
+<td>modem_a</td>
+</tr>
+<tr class="row-odd"><td>34</td>
+<td>bluetooth_a</td>
+</tr>
+<tr class="row-even"><td>35</td>
+<td>dsp_a</td>
+</tr>
+<tr class="row-odd"><td>36</td>
+<td>boot_a</td>
+</tr>
+<tr class="row-even"><td>37</td>
+<td>rdimage_a</td>
+</tr>
+<tr class="row-odd"><td>38</td>
+<td>vbmeta_a</td>
+</tr>
+<tr class="row-even"><td>39</td>
+<td>dtbo_a</td>
+</tr>
+<tr class="row-odd"><td>40</td>
+<td>oem_a</td>
+</tr>
+<tr class="row-even"><td>41</td>
+<td>vendor_a</td>
+</tr>
+<tr class="row-odd"><td>42</td>
+<td>system_a</td>
+</tr>
+<tr class="row-even"><td>43</td>
+<td>modem_b</td>
+</tr>
+<tr class="row-odd"><td>44</td>
+<td>bluetooth_b</td>
+</tr>
+<tr class="row-even"><td>45</td>
+<td>dsp_b</td>
+</tr>
+<tr class="row-odd"><td>46</td>
+<td>boot_b</td>
+</tr>
+<tr class="row-even"><td>47</td>
+<td>rdimage_b</td>
+</tr>
+<tr class="row-odd"><td>48</td>
+<td>vbmeta_b</td>
+</tr>
+<tr class="row-even"><td>49</td>
+<td>dtbo_b</td>
+</tr>
+<tr class="row-odd"><td>50</td>
+<td>oem_b</td>
+</tr>
+<tr class="row-even"><td>51</td>
+<td>vendor_b</td>
+</tr>
+<tr class="row-odd"><td>52</td>
+<td>system_b</td>
+</tr>
+<tr class="row-even"><td>53</td>
+<td>sec</td>
+</tr>
+<tr class="row-odd"><td>54</td>
+<td>apdp</td>
+</tr>
+<tr class="row-even"><td>55</td>
+<td>msadp</td>
+</tr>
+<tr class="row-odd"><td>56</td>
+<td>spunvm</td>
+</tr>
+<tr class="row-even"><td>57</td>
+<td>limits</td>
+</tr>
+<tr class="row-odd"><td>58</td>
+<td>toolsfv</td>
+</tr>
+<tr class="row-even"><td>59</td>
+<td>logfs</td>
+</tr>
+<tr class="row-odd"><td>60</td>
+<td>logdump</td>
+</tr>
+<tr class="row-even"><td>61</td>
+<td>modemst1</td>
+</tr>
+<tr class="row-odd"><td>62</td>
+<td>modemst2</td>
+</tr>
+<tr class="row-even"><td>63</td>
+<td>fsg</td>
+</tr>
+<tr class="row-odd"><td>64</td>
+<td>cdt</td>
+</tr>
+<tr class="row-even"><td>65</td>
+<td>misc</td>
+</tr>
+<tr class="row-odd"><td>66</td>
+<td>keystore</td>
+</tr>
+<tr class="row-even"><td>67</td>
+<td>frp</td>
+</tr>
+<tr class="row-odd"><td>68</td>
+<td>appslog</td>
+</tr>
+<tr class="row-even"><td>69</td>
+<td>diag</td>
+</tr>
+<tr class="row-odd"><td>70</td>
+<td>Qnovo</td>
+</tr>
+<tr class="row-even"><td>71</td>
+<td>fsmetadata</td>
+</tr>
+<tr class="row-odd"><td>72</td>
+<td>fsc</td>
+</tr>
+<tr class="row-even"><td>73</td>
+<td>userdata</td>
+</tr>
+<tr class="row-odd"><td>74</td>
+<td>rddata</td>
+</tr>
+</tbody>
+</table>
+<p>Other partitions:</p>
+<table border="1" class="docutils">
+<colgroup>
+<col width="24%" />
+<col width="76%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Part</th>
+<th class="head">Label</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td>sdb1</td>
+<td>xbl_a</td>
+</tr>
+<tr class="row-odd"><td>sdb2</td>
+<td>xbl_config_a</td>
+</tr>
+<tr class="row-even"><td>sdc1</td>
+<td>xbl_b</td>
+</tr>
+<tr class="row-odd"><td>sdc2</td>
+<td>xbl_config_b</td>
+</tr>
+</tbody>
+</table>
 </div>
 </div>
 
@@ -257,10 +518,10 @@
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="../kagura/" class="btn btn-neutral float-right" title="Sony Xperia XZ (kagura)" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+        <a href="../../../sm6125/" class="btn btn-neutral float-right" title="SM6125 (Trinket)" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
       
       
-        <a href="../" class="btn btn-neutral float-left" title="Sony MSM8996 (Tone)" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+        <a href="../" class="btn btn-neutral float-left" title="Sony SDM845 (Tama)" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
       
     </div>
   
