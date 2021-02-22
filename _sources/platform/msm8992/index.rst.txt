@@ -1,4 +1,4 @@
-MSM8992 (baby8994/no codename?)
+MSM8992 (codename?)
 ===============================
 
 This SoC looks and feels like a fused-off MSM8994, but is in fact a separate design.

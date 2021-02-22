@@ -1,4 +1,4 @@
-SM8150 (nile)
+SM8150 (Nile)
 ===============================
 
 Very fast, very energy efficient, very very.

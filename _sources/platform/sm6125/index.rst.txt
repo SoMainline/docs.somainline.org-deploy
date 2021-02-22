@@ -1,4 +1,4 @@
-SM6125 (trinket)
+SM6125 (Trinket)
 ================
 
 Looks pretty good on paper, feels terrible at first, but then it's not that bad, really.

@@ -1,4 +1,4 @@
-SDM630 (triton)
+SDM630 (Triton)
 ===============================
 
 SoC info goes here.

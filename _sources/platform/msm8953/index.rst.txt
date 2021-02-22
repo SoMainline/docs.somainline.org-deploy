@@ -1,4 +1,4 @@
-MSM8953 (titanium)
+MSM8953 (Titanium)
 ==================
 
 This SoC is one giant rebrand party (450/625/626/632/APQ8053).

@@ -1,4 +1,4 @@
-MSM8994 (plutonium)
+MSM8994 (Plutonium)
 ===================
 
 This SoC was deemed to fail due to release-time software. At first, it literally barely worked, but with BSP updates it got stabler, cooler and more energy efficient. First flagship SoC to feature A4xx (A430 in this case) and first flagship ARM64 design from Qualcomm.
