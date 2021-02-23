@@ -16,7 +16,7 @@ Flashing latest stock firmware
 
 * `Community <http://www.flashtool.net>`_
   (`GitHub <https://github.com/androxyde/flashtool>`_)
-  (`releases mirror <https://sx.ix5.org/files/flashtool/`_)
+  (`releases mirror <https://sx.ix5.org/files/flashtool/>`_)
 * `Sony Flashtool "Emma" <https://developer.sony.com/develop/open-devices/get-started/flash-tool>`_ (Windows-only)
 
 Stock firmware dumps
