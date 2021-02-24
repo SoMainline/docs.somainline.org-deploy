@@ -1,17 +1,12 @@
-Sony Xperia XZ (kagura)
-=======================
+Sony Xperia XZs (keyaki)
+========================
 
-The best device out there. Totally not cursed.
-
-.. image:: sony-xperia-xz.jpg
-
-*TTC? Utter one more word and I'll have you hanged!*
-
+Apparently more than just a Kagura with better cameras?
 
 +-------------------------+------------------------------------------------------+
 |               Component | Details                                              |
 +=========================+======================================================+
-|                 Chipset | MSM8996v3/v3.1 (speedbin 0)                          |
+|                 Chipset | MSM8996v3/v3.1                                       |
 +-------------------------+------------------------------------------------------+
 |                    PMIC | PM8994v2.0 + PMI8996v1.1                             |
 +-------------------------+------------------------------------------------------+
@@ -27,12 +22,12 @@ The best device out there. Totally not cursed.
      - Native Resolution
      - Quirks
    * - Main
-     - IMX300
+     - IMX400
      - Sony
      - ?
      - external ToF sensor
    * - Front
-     - IMX214
+     - IMX258
      - Sony
      - ?
      - .
@@ -46,10 +41,10 @@ The best device out there. Totally not cursed.
      - Spec version
      - FW version
    * - 32GB
-     - BJNB4R
-     - 0x0100 (Samsung)
+     - HBG4a2
+     - 0x014a (Hynix)
      - (?)
-     - 0x0f00000000000000
+     - 0xa500000000000000
    * - 64GB
      - ?
      - ?

@@ -8,4 +8,5 @@ SoC information goes here
 
    dora/index.rst
    kagura/index.rst
+   keyaki/index.rst
 
