@@ -1,9 +1,6 @@
 SoMainline Docs
 ===============
 
-.. commented out
-.. .. DANGER:: This service is for *internal* use of the SoMainline Team. If you got there by mistake, please exit immediately and warn us at team@somainline.org
-
 .. toctree::
    :hidden:
    :maxdepth: 1
