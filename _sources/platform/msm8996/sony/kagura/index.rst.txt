@@ -44,10 +44,10 @@ The best device out there. Totally not cursed.
      - Spec version
      - FW version
    * - 32GB
-     - ?
-     - ?
-     - ?
-     - ?
+     - BJNB4R
+     - 0x0100 (Samsung)
+     - (?)
+     - 0x0f00000000000000
    * - 64GB
      - ?
      - ?
