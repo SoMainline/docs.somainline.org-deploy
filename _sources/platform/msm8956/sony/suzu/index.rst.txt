@@ -16,6 +16,11 @@ Sony Xperia X (Suzu)
      - 0x014a (Hynix)
      - (Connected over SDHCI-MSMv4)
      - 0xa500000000000000
+   * - 32GB
+     - 032G34
+     - ? (Toshiba)
+     - (Connected over SDHCI-MSMv4)
+     - ?
    * - 64GB
      - ?
      - ?
