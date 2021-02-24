@@ -1,4 +1,4 @@
-Sony Xperia XZ1 (poplar)
+Sony Xperia XZ1 (Poplar)
 ========================
 
 .. note:: TBD

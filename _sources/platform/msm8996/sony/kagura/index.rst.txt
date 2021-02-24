@@ -1,4 +1,4 @@
-Sony Xperia XZ (kagura)
+Sony Xperia XZ (Kagura)
 =======================
 
 The best device out there. Totally not cursed.

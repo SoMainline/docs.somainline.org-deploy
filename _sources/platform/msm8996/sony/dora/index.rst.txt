@@ -1,4 +1,4 @@
-Sony Xperia X Performance (dora)
+Sony Xperia X Performance (Dora)
 ================================
 
 .. note:: TBD

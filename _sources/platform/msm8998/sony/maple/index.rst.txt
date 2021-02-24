@@ -1,4 +1,4 @@
-Sony Xperia XZ Premium (maple)
+Sony Xperia XZ Premium (Maple)
 ==============================
 
 .. note:: TBD

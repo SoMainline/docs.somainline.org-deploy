@@ -1,4 +1,4 @@
-Sony Xperia Z4 Tablet Wi-Fi (karin_windy)
+Sony Xperia Z4 Tablet Wi-Fi (Karin_windy)
 =========================================
 
 .. note:: TBD

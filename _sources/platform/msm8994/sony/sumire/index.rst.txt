@@ -1,4 +1,4 @@
-Sony Xperia Z5 (sumire)
+Sony Xperia Z5 (Sumire)
 =======================
 
 .. note:: TBD

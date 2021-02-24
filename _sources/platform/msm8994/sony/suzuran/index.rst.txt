@@ -1,4 +1,4 @@
-Sony Xperia Z5 Compact (suzuran)
+Sony Xperia Z5 Compact (Suzuran)
 ================================
 
 .. note:: TBD

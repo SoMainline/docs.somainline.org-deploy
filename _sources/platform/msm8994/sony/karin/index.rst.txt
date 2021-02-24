@@ -1,4 +1,4 @@
-Sony Xperia Z4 Tablet LTE (karin)
+Sony Xperia Z4 Tablet LTE (Karin)
 =================================
 
 .. note:: TBD

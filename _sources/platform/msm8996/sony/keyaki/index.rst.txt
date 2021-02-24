@@ -1,4 +1,4 @@
-Sony Xperia XZs (keyaki)
+Sony Xperia XZs (Keyaki)
 ========================
 
 Apparently more than just a Kagura with better cameras?

@@ -1,4 +1,4 @@
-Sony Xperia XZ1 Compact (lilac)
+Sony Xperia XZ1 Compact (Lilac)
 ===============================
 
 .. note:: TBD

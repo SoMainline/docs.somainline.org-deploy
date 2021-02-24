@@ -1,4 +1,4 @@
-Sony Xperia Z5 Premium (satsuki)
+Sony Xperia Z5 Premium (Satsuki)
 ================================
 
 .. note:: TBD
