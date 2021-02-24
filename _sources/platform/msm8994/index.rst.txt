@@ -10,6 +10,8 @@ This SoC was deemed to fail due to release-time software. At first, it literally
 .. toctree::
    :maxdepth: 1
 
+   sony/index.rst
+
 .. list-table:: Camera HW
    :header-rows: 1
 
