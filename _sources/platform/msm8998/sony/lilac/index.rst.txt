@@ -1,5 +1,5 @@
-Sony Xperia XZ Premium (maple)
-==============================
+Sony Xperia XZ1 Compact (lilac)
+===============================
 
 .. note:: TBD
 
@@ -27,7 +27,7 @@ Sony Xperia XZ Premium (maple)
      - ?
      - external ToF sensor
    * - Front
-     - IMX258
+     - IMX219
      - Sony
      - ?
      - .

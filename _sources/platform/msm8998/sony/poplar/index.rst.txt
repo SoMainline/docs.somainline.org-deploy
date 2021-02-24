@@ -1,5 +1,5 @@
-Sony Xperia XZ Premium (maple)
-==============================
+Sony Xperia XZ1 (poplar)
+========================
 
 .. note:: TBD
 
