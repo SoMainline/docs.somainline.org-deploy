@@ -59,16 +59,16 @@ Apparently the #1 most selling phone that at least one person you know is requir
      - FW version
    * - 32GB
      - ?
-     - eMMC 5.1
      - ?
+     - eMMC 5.1
      - ?
    * - 64GB
      - ?
-     - eMMC 5.1
      - ?
+     - eMMC 5.1
      - ?
    * - 128GB
      - ?
-     - eMMC 5.1
      - ?
+     - eMMC 5.1
      - ?
