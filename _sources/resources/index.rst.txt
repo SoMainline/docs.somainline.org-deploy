@@ -27,7 +27,7 @@ Stock firmware dumps
 Mainlining Notes
 ^^^^^^^^^^^^^^^^
 
-* `pmos Mainlining article <https://wiki.postmarketos.org/wiki/Mainlining>`_
+* `pmOS Mainlining article <https://wiki.postmarketos.org/wiki/Mainlining>`_
 * `SDM660 Mainlining article <https://wiki.postmarketos.org/wiki/Qualcomm_Snapdragon_660_(SDM660)>`_
 * `Notes for Linux on mobile in general <https://github.com/SoMainline/LinuxMobileNotes>`_
 * `Common Mainline porting issues and fixes <https://github.com/SoMainline/MainlineAndroidPorting>`_
