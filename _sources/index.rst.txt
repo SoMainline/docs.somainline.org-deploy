@@ -8,6 +8,7 @@ SoMainline Docs
 
    platform/msm8953/index.rst
    platform/msm8956/index.rst
+   platform/msm8974/index.rst
    platform/msm8992/index.rst
    platform/msm8994/index.rst
    platform/msm8996/index.rst
