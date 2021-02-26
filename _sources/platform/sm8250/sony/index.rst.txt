@@ -7,5 +7,6 @@ Platform info goes here
    :maxdepth: 1
 
    pdx203/index.rst
+   pdx204/index.rst
    pdx206/index.rst
 
