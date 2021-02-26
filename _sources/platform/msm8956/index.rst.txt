@@ -8,7 +8,7 @@ SoC info goes here.
 
    sony/index.rst
 
-.. list-table:: Various HW
+.. list-table:: Camera HW
    :header-rows: 1
 
    * - Component
@@ -23,6 +23,22 @@ SoC info goes here.
      - v3.1
      - 2
      - .
+   * - ISPIF
+     - v3.0
+     - 1
+     - .
+   * - VFE
+     - v4.0
+     - 2
+     - .
+
+.. list-table:: Various HW
+   :header-rows: 1
+
+   * - Component
+     - Revision
+     - Quantity
+     - Quirks
    * - DSI CTRL
      - v1.4.2
      - 2
@@ -35,10 +51,6 @@ SoC info goes here.
      - ?
      - ?
      - .
-   * - ISPIF
-     - v3.0
-     - 1
-     - .
    * - Qualcomm Crypto Engine (QCE)
      - v5.3.1
      - 1
@@ -46,8 +58,4 @@ SoC info goes here.
    * - TSENS
      - v1.3
      - 1x11 sensors
-     - .
-   * - VFE
-     - v4.0
-     - 2
      - .
