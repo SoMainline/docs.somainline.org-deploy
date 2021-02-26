@@ -8,7 +8,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>Porting &mdash; SoMainline Docs  documentation</title>
+  <title>Minimal Android Userspace &mdash; SoMainline Docs  documentation</title>
   
 
   
@@ -37,8 +37,8 @@
   <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
     <link rel="index" title="Index" href="../../genindex/" />
     <link rel="search" title="Search" href="../../search/" />
-    <link rel="next" title="Resources" href="../../resources/" />
-    <link rel="prev" title="Minimal Android Userspace" href="../minimal-android/" /> 
+    <link rel="next" title="Porting" href="../porting/" />
+    <link rel="prev" title="Sony Xperia 5 II (PDX206)" href="../../platform/sm8250/sony/pdx206/" /> 
 </head>
 
 <body class="wy-body-for-nav">
@@ -216,8 +216,8 @@
 </ul>
 <p class="caption"><span class="caption-text">Guides</span></p>
 <ul class="current">
-<li class="toctree-l1"><a class="reference internal" href="../minimal-android/">Minimal Android Userspace</a></li>
-<li class="toctree-l1 current"><a class="current reference internal" href="#">Porting</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Minimal Android Userspace</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../porting/">Porting</a></li>
 </ul>
 <p class="caption"><span class="caption-text">Resources</span></p>
 <ul>
@@ -274,13 +274,13 @@
     
       <li><a href="../../">Docs</a> &raquo;</li>
         
-      <li>Porting</li>
+      <li>Minimal Android Userspace</li>
     
     
       <li class="wy-breadcrumbs-aside">
         
             
-            <a href="../../_sources/guides/porting.rst.txt" rel="nofollow"> View page source</a>
+            <a href="../../_sources/guides/minimal-android.rst.txt" rel="nofollow"> View page source</a>
           
         
       </li>
@@ -293,11 +293,94 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
             
-  <div class="section" id="porting">
-<h1>Porting<a class="headerlink" href="#porting" title="Permalink to this headline">¶</a></h1>
+  <div class="section" id="minimal-android-userspace">
+<h1>Minimal Android Userspace<a class="headerlink" href="#minimal-android-userspace" title="Permalink to this headline">¶</a></h1>
+<p>The following variables (not their values!) are a minimal starting point when
+using Android userspace on a mainline kernel.</p>
+<p><code class="docutils literal notranslate"><span class="pre">PRODUCT</span></code> definitions:</p>
+<div class="code highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">PRODUCT_NAME</span> <span class="p">:</span><span class="o">=</span> <span class="n">mainline_f5121</span>
+<span class="n">PRODUCT_DEVICE</span> <span class="p">:</span><span class="o">=</span> <span class="n">suzu</span><span class="o">-</span><span class="n">mainline</span>
+<span class="n">PRODUCT_MODEL</span> <span class="p">:</span><span class="o">=</span> <span class="n">Xperia</span> <span class="n">X</span> <span class="p">(</span><span class="n">AOSP</span> <span class="n">Mainline</span><span class="p">)</span>
+<span class="n">PRODUCT_BRAND</span> <span class="p">:</span><span class="o">=</span> <span class="n">Sony</span>
+<span class="n">PRODUCT_MANUFACTURER</span> <span class="p">:</span><span class="o">=</span> <span class="n">Sony</span>
+</pre></div>
+</div>
+<p>Base <code class="docutils literal notranslate"><span class="pre">AndroidProducts.mk</span></code> for Android build system to pick up the device:</p>
+<div class="code highlight-default notranslate"><div class="highlight"><pre><span></span>PRODUCT_MAKEFILES := \
+    $(LOCAL_DIR)/mainline_f5121.mk
+COMMON_LUNCH_CHOICES := \
+    mainline_f5121-userdebug
+</pre></div>
+</div>
+<p>Kernel command line: Hardware, bootdevices, permissive SELinux &amp; other early
+porting conveniences:</p>
+<div class="code highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">BOARD_KERNEL_CMDLINE</span> <span class="o">+=</span> <span class="n">androidboot</span><span class="o">.</span><span class="n">hardware</span><span class="o">=</span><span class="n">suzu</span>
+<span class="n">BOARD_KERNEL_CMDLINE</span> <span class="o">+=</span> <span class="n">androidboot</span><span class="o">.</span><span class="n">bootdevice</span><span class="o">=</span><span class="mf">7824900.</span><span class="n">sdhci</span>
+<span class="n">BOARD_KERNEL_CMDLINE</span> <span class="o">+=</span> <span class="n">earlycon</span><span class="o">=</span><span class="n">msm_serial_dm</span><span class="p">,</span><span class="mh">0x7af0000</span>
+<span class="n">BOARD_KERNEL_CMDLINE</span> <span class="o">+=</span> <span class="n">androidboot</span><span class="o">.</span><span class="n">selinux</span><span class="o">=</span><span class="n">permissive</span>
+<span class="n">BOARD_KERNEL_CMDLINE</span> <span class="o">+=</span> <span class="n">androidboot</span><span class="o">.</span><span class="n">memcg</span><span class="o">=</span><span class="mi">1</span>
+<span class="n">BOARD_KERNEL_CMDLINE</span> <span class="o">+=</span> <span class="n">printk</span><span class="o">.</span><span class="n">devkmsg</span><span class="o">=</span><span class="n">on</span>
+</pre></div>
+</div>
+<p>Android sysprops for getting USB up (adjust for your controller):</p>
+<div class="code highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">PRODUCT_PROPERTY_OVERRIDES</span> <span class="o">+=</span> \
+    <span class="n">sys</span><span class="o">.</span><span class="n">usb</span><span class="o">.</span><span class="n">controller</span><span class="o">=</span><span class="n">ci_hdrc</span><span class="o">.</span><span class="mi">0</span>
+</pre></div>
+</div>
 <div class="admonition note">
 <p class="first admonition-title">Note</p>
-<p class="last">TBD</p>
+<p class="last">fstab should not contradict <code class="docutils literal notranslate"><span class="pre">android,fstab</span></code> entry in <code class="docutils literal notranslate"><span class="pre">dts</span></code></p>
+</div>
+<p>Copy device <code class="docutils literal notranslate"><span class="pre">fstab</span></code>:</p>
+<div class="code highlight-default notranslate"><div class="highlight"><pre><span></span>PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/fstab.&lt;device&gt;:$(TARGET_COPY_OUT_VENDOR)/etc/fstab.&lt;device&gt;
+</pre></div>
+</div>
+<p>With <a class="reference external" href="https://source.android.com/devices/bootloader/partitions/system-as-root#about-system-as-root">System-As-Root</a> (<code class="docutils literal notranslate"><span class="pre">SAR</span></code>) , these need to also be copied to the ramdisk:</p>
+<div class="code highlight-default notranslate"><div class="highlight"><pre><span></span>PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/fstab.&lt;device&gt;:$(TARGET_RAMDISK_OUT)/fstab.&lt;device&gt;
+</pre></div>
+</div>
+<p>Copy init files for regular boot and recovery:</p>
+<div class="code highlight-default notranslate"><div class="highlight"><pre><span></span>PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/init.&lt;device&gt;.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.&lt;device&gt;.rc \
+    $(LOCAL_PATH)/init.usb.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.usb.rc
+</pre></div>
+</div>
+<p>Graphics:</p>
+<div class="code highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">BOARD_GPU_DRIVERS</span> <span class="p">:</span><span class="o">=</span> <span class="n">freedreno</span>
+<span class="n">PRODUCT_PROPERTY_OVERRIDES</span> <span class="o">+=</span> \
+    <span class="n">ro</span><span class="o">.</span><span class="n">hardware</span><span class="o">.</span><span class="n">hwcomposer</span><span class="o">=</span><span class="n">drm</span>
+<span class="n">PRODUCT_PACKAGES</span> <span class="o">+=</span> \
+    <span class="n">gallium_dri</span><span class="p">:</span><span class="mi">64</span> \
+    <span class="n">libGLES_mesa</span><span class="p">:</span><span class="mi">64</span>
+<span class="c1"># Android gralloc module using libgbm API from Mesa</span>
+<span class="c1"># https://github.com/robherring/gbm_gralloc</span>
+<span class="n">PRODUCT_PACKAGES</span> <span class="o">+=</span> \
+    <span class="n">android</span><span class="o">.</span><span class="n">hardware</span><span class="o">.</span><span class="n">graphics</span><span class="o">.</span><span class="n">allocator</span><span class="nd">@2</span><span class="o">.</span><span class="mi">0</span><span class="o">-</span><span class="n">impl</span><span class="p">:</span><span class="mi">64</span> \
+    <span class="n">android</span><span class="o">.</span><span class="n">hardware</span><span class="o">.</span><span class="n">graphics</span><span class="o">.</span><span class="n">allocator</span><span class="nd">@2</span><span class="o">.</span><span class="mi">0</span><span class="o">-</span><span class="n">service</span> \
+    <span class="n">android</span><span class="o">.</span><span class="n">hardware</span><span class="o">.</span><span class="n">graphics</span><span class="o">.</span><span class="n">mapper</span><span class="nd">@2</span><span class="o">.</span><span class="mi">0</span><span class="o">-</span><span class="n">impl</span><span class="o">-</span><span class="mf">2.1</span><span class="p">:</span><span class="mi">64</span> \
+    <span class="n">gralloc</span><span class="o">.</span><span class="n">gbm</span><span class="p">:</span><span class="mi">64</span>
+<span class="n">PRODUCT_PROPERTY_OVERRIDES</span> <span class="o">+=</span> \
+    <span class="n">ro</span><span class="o">.</span><span class="n">hardware</span><span class="o">.</span><span class="n">gralloc</span><span class="o">=</span><span class="n">gbm</span>
+<span class="c1"># https://gitlab.freedesktop.org/drm-hwcomposer/drm-hwcomposer</span>
+<span class="c1"># KMS-based HWComposer implementation.</span>
+<span class="n">PRODUCT_PACKAGES</span> <span class="o">+=</span> \
+    <span class="n">android</span><span class="o">.</span><span class="n">hardware</span><span class="o">.</span><span class="n">graphics</span><span class="o">.</span><span class="n">composer</span><span class="nd">@2</span><span class="o">.</span><span class="mi">4</span><span class="o">-</span><span class="n">impl</span><span class="p">:</span><span class="mi">64</span> \
+    <span class="n">android</span><span class="o">.</span><span class="n">hardware</span><span class="o">.</span><span class="n">graphics</span><span class="o">.</span><span class="n">composer</span><span class="nd">@2</span><span class="o">.</span><span class="mi">4</span><span class="o">-</span><span class="n">service</span> \
+    <span class="n">hwcomposer</span><span class="o">.</span><span class="n">drm</span><span class="p">:</span><span class="mi">64</span>
+<span class="n">PRODUCT_PROPERTY_OVERRIDES</span> <span class="o">+=</span> \
+    <span class="n">ro</span><span class="o">.</span><span class="n">hardware</span><span class="o">.</span><span class="n">hwcomposer</span><span class="o">=</span><span class="n">drm</span>
+</pre></div>
+</div>
+<p>Cut down build times by trying to build mostly 64-bit:</p>
+<div class="code highlight-default notranslate"><div class="highlight"><pre><span></span>$(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit_only.mk)
+</pre></div>
+</div>
+<p>For legacy devices (no <code class="docutils literal notranslate"><span class="pre">SAR</span></code>/recovery-as-boot), you need to explicitly enable
+building of <code class="docutils literal notranslate"><span class="pre">boot.img</span></code></p>
+<div class="code highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">PRODUCT_BUILD_BOOT_IMAGE</span> <span class="p">:</span><span class="o">=</span> <span class="n">true</span>
+</pre></div>
 </div>
 </div>
 
@@ -309,10 +392,10 @@
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="../../resources/" class="btn btn-neutral float-right" title="Resources" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+        <a href="../porting/" class="btn btn-neutral float-right" title="Porting" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
       
       
-        <a href="../minimal-android/" class="btn btn-neutral float-left" title="Minimal Android Userspace" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+        <a href="../../platform/sm8250/sony/pdx206/" class="btn btn-neutral float-left" title="Sony Xperia 5 II (PDX206)" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
       
     </div>
   

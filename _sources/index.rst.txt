@@ -26,6 +26,7 @@ SoMainline Docs
    :maxdepth: 1
    :caption: Guides
 
+   guides/minimal-android.rst
    guides/porting.rst
 
 .. toctree::
