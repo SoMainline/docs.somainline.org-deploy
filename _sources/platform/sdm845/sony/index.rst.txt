@@ -9,4 +9,5 @@ Platform information goes here.
    akari/index.rst
    akatsuki/index.rst
    apollo/index.rst
+   aurora/index.rst
 
