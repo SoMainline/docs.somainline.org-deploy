@@ -1,5 +1,5 @@
-Sony Xperia Z Ultra (Amami)
-===========================
+Sony Xperia Z Ultra (Togari)
+============================
 
 .. note:: TBD
 
