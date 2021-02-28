@@ -43,6 +43,7 @@ SoMainline Docs
 
    Overview <resources/index.rst>
    resources/sister-sites.rst
+   resources/aliases.rst
 
 
 Open Source Hardware Documentation

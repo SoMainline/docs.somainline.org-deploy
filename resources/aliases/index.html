@@ -8,7 +8,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>Sister Sites &mdash; SoMainline Docs  documentation</title>
+  <title>Useful Aliases &mdash; SoMainline Docs  documentation</title>
   
 
   
@@ -37,8 +37,7 @@
   <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
     <link rel="index" title="Index" href="../../genindex/" />
     <link rel="search" title="Search" href="../../search/" />
-    <link rel="next" title="Useful Aliases" href="../aliases/" />
-    <link rel="prev" title="Resources" href="../" /> 
+    <link rel="prev" title="Sister Sites" href="../sister-sites/" /> 
 </head>
 
 <body class="wy-body-for-nav">
@@ -232,10 +231,10 @@
 <li class="toctree-l2"><a class="reference internal" href="../#mainlining-notes">Mainlining Notes</a></li>
 </ul>
 </li>
-<li class="toctree-l1 current"><a class="current reference internal" href="#">Sister Sites</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../aliases/">Useful Aliases</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="../aliases/#shell">shell</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../aliases/#gitconfig">gitconfig</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../sister-sites/">Sister Sites</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Useful Aliases</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#shell">shell</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#gitconfig">gitconfig</a></li>
 </ul>
 </li>
 </ul>
@@ -283,13 +282,13 @@
     
       <li><a href="../../">Docs</a> &raquo;</li>
         
-      <li>Sister Sites</li>
+      <li>Useful Aliases</li>
     
     
       <li class="wy-breadcrumbs-aside">
         
             
-            <a href="../../_sources/resources/sister-sites.rst.txt" rel="nofollow"> View page source</a>
+            <a href="../../_sources/resources/aliases.rst.txt" rel="nofollow"> View page source</a>
           
         
       </li>
@@ -302,15 +301,84 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
             
-  <div class="section" id="sister-sites">
-<h1>Sister Sites<a class="headerlink" href="#sister-sites" title="Permalink to this headline">¶</a></h1>
-<ul class="simple">
-<li><a class="reference external" href="https://wiki.postmarketos.org/wiki/Main_Page">postmarketOS Wiki</a></li>
-<li><a class="reference external" href="https://docs.ubports.com/">UBPorts’ docs</a></li>
-<li><a class="reference external" href="https://docs.halium.org/en/latest/">Halium docs</a></li>
-<li><a class="reference external" href="https://opendevices.ix5.org">Open Devices Community Page</a></li>
-<li><a class="reference external" href="https://sx.ix5.org/info/">Open Devices Corner</a></li>
-</ul>
+  <div class="section" id="useful-aliases">
+<h1>Useful Aliases<a class="headerlink" href="#useful-aliases" title="Permalink to this headline">¶</a></h1>
+<p>Useful aliases for shell, git etc.</p>
+<div class="section" id="shell">
+<h2>shell<a class="headerlink" href="#shell" title="Permalink to this headline">¶</a></h2>
+<div class="code highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">alias</span> <span class="n">gs</span><span class="o">=</span><span class="s2">&quot;git status&quot;</span>
+<span class="n">alias</span> <span class="n">gmc</span><span class="o">=</span><span class="s2">&quot;git merge --continue&quot;</span>
+
+<span class="n">alias</span> <span class="n">gbv</span><span class="o">=</span><span class="s2">&quot;git branch -vv&quot;</span>
+<span class="n">alias</span> <span class="n">gbrv</span><span class="o">=</span><span class="s2">&quot;git branch -rv&quot;</span>
+<span class="n">alias</span> <span class="n">gbm</span><span class="o">=</span><span class="s2">&quot;git branch -m&quot;</span>
+
+<span class="n">alias</span> <span class="n">glgo</span><span class="o">=</span><span class="s2">&quot;git log --oneline --stat --decorate&quot;</span>
+<span class="n">alias</span> <span class="n">glgf</span><span class="o">=</span><span class="s2">&quot;git log --format=fuller&quot;</span>
+
+<span class="n">alias</span> <span class="n">gam</span><span class="o">=</span><span class="s2">&quot;git am&quot;</span>
+<span class="n">alias</span> <span class="n">gama</span><span class="o">=</span><span class="s2">&quot;git am --abort&quot;</span>
+<span class="n">alias</span> <span class="n">gamc</span><span class="o">=</span><span class="s2">&quot;git am --continue&quot;</span>
+<span class="n">alias</span> <span class="n">gamscp</span><span class="o">=</span><span class="s2">&quot;git am --show-current-patch&quot;</span>
+
+<span class="n">alias</span> <span class="n">greva</span><span class="o">=</span><span class="s2">&quot;git revert --abort&quot;</span>
+<span class="n">alias</span> <span class="n">grevc</span><span class="o">=</span><span class="s2">&quot;git revert --continue&quot;</span>
+
+<span class="n">alias</span> <span class="n">grbscp</span><span class="o">=</span><span class="s2">&quot;git rebase --show-current-patch&quot;</span>
+<span class="n">alias</span> <span class="n">grbe</span><span class="o">=</span><span class="s2">&quot;git rebase --edit-todo&quot;</span>
+<span class="n">alias</span> <span class="n">grbcn</span><span class="o">=</span><span class="s2">&quot;git rebase --continue --no-edit&quot;</span>
+<span class="n">alias</span> <span class="n">grbis</span><span class="o">=</span><span class="s2">&quot;git rebase -i --exec &#39;git commit --amend -s --no-edit&#39;&quot;</span>
+
+<span class="n">alias</span> <span class="n">gstlp</span><span class="o">=</span><span class="s2">&quot;git stash list -p&quot;</span>
+
+<span class="n">alias</span> <span class="n">gcps</span><span class="o">=</span><span class="s2">&quot;git cherry-pick --skip&quot;</span>
+<span class="n">alias</span> <span class="n">gcpcn</span><span class="o">=</span><span class="s2">&quot;git cherry-pick --continue --no-edit&quot;</span>
+
+<span class="n">alias</span> <span class="n">gdni</span><span class="o">=</span><span class="s2">&quot;git diff --no-index&quot;</span>
+
+<span class="n">alias</span> <span class="n">gfp</span><span class="o">=</span><span class="s2">&quot;git format-patch&quot;</span>
+
+<span class="n">alias</span> <span class="n">grho</span><span class="o">=</span><span class="s1">&#39;git reset --hard origin/$(git_current_branch)&#39;</span>
+<span class="n">alias</span> <span class="n">grhk</span><span class="o">=</span><span class="s2">&quot;git reset --keep&quot;</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="gitconfig">
+<h2>gitconfig<a class="headerlink" href="#gitconfig" title="Permalink to this headline">¶</a></h2>
+<div class="code highlight-default notranslate"><div class="highlight"><pre><span></span><span class="p">[</span><span class="n">alias</span><span class="p">]</span>
+    <span class="c1"># from http://gggritso.com/human-git-aliases</span>
+    <span class="n">unstage</span> <span class="o">=</span> <span class="n">reset</span> <span class="o">-</span><span class="n">q</span> <span class="n">HEAD</span> <span class="o">--</span>
+    <span class="n">discard</span> <span class="o">=</span> <span class="n">checkout</span> <span class="o">--</span>
+    <span class="n">uncommit</span> <span class="o">=</span> <span class="n">reset</span> <span class="o">--</span><span class="n">mixed</span> <span class="n">HEAD</span><span class="o">~</span>
+    <span class="n">append</span> <span class="o">=</span> <span class="n">commit</span> <span class="o">--</span><span class="n">amend</span> <span class="o">--</span><span class="n">no</span><span class="o">-</span><span class="n">edit</span>
+    <span class="n">precommit</span> <span class="o">=</span> <span class="n">diff</span> <span class="o">--</span><span class="n">cached</span> <span class="o">--</span><span class="n">diff</span><span class="o">-</span><span class="n">algorithm</span><span class="o">=</span><span class="n">minimal</span> <span class="o">-</span><span class="n">w</span>
+    <span class="n">remotes</span> <span class="o">=</span> <span class="n">remote</span> <span class="o">-</span><span class="n">vvv</span>
+
+    <span class="c1"># listing</span>
+    <span class="n">graph</span> <span class="o">=</span> <span class="n">log</span> <span class="o">--</span><span class="n">graph</span> <span class="o">-</span><span class="mi">20</span> <span class="o">--</span><span class="n">branches</span> <span class="o">--</span><span class="n">remotes</span> <span class="o">--</span><span class="n">tags</span>  <span class="o">--</span><span class="nb">format</span><span class="o">=</span><span class="nb">format</span><span class="p">:</span><span class="s1">&#39;%Cgreen%h %Creset• %&lt;(75,trunc)</span><span class="si">%s</span><span class="s1"> (</span><span class="si">%c</span><span class="s1">N, </span><span class="si">%c</span><span class="s1">r) %Cred</span><span class="si">%d</span><span class="s1">&#39;</span> <span class="o">--</span><span class="n">topo</span><span class="o">-</span><span class="n">order</span>
+    <span class="n">graphall</span> <span class="o">=</span> <span class="n">log</span> <span class="o">--</span><span class="n">graph</span> <span class="o">--</span><span class="n">branches</span> <span class="o">--</span><span class="n">remotes</span> <span class="o">--</span><span class="n">tags</span>  <span class="o">--</span><span class="nb">format</span><span class="o">=</span><span class="nb">format</span><span class="p">:</span><span class="s1">&#39;%Cgreen%h %Creset• %&lt;(75,trunc)</span><span class="si">%s</span><span class="s1"> (</span><span class="si">%c</span><span class="s1">N, </span><span class="si">%c</span><span class="s1">r) %Cred</span><span class="si">%d</span><span class="s1">&#39;</span> <span class="o">--</span><span class="n">topo</span><span class="o">-</span><span class="n">order</span>
+    <span class="n">branches</span> <span class="o">=</span> <span class="n">branch</span> <span class="o">-</span><span class="n">a</span>
+    <span class="n">tags</span> <span class="o">=</span> <span class="n">tag</span> <span class="o">-</span><span class="n">l</span>
+    <span class="n">unmerged</span> <span class="o">=</span> <span class="n">diff</span> <span class="o">--</span><span class="n">name</span><span class="o">-</span><span class="n">only</span> <span class="o">--</span><span class="n">diff</span><span class="o">-</span><span class="nb">filter</span><span class="o">=</span><span class="n">U</span>
+    <span class="n">stashes</span> <span class="o">=</span> <span class="n">stash</span> <span class="nb">list</span>
+
+    <span class="c1"># own</span>
+    <span class="n">aliases</span> <span class="o">=</span> <span class="n">config</span> <span class="o">--</span><span class="n">get</span><span class="o">-</span><span class="n">regexp</span> <span class="n">alias</span>
+    <span class="n">currentbranch</span> <span class="o">=</span> <span class="n">rev</span><span class="o">-</span><span class="n">parse</span> <span class="o">--</span><span class="n">abbrev</span><span class="o">-</span><span class="n">ref</span> <span class="n">HEAD</span>
+    <span class="nb">id</span> <span class="o">=</span> <span class="n">rev</span><span class="o">-</span><span class="n">parse</span> <span class="o">--</span><span class="n">short</span> <span class="n">HEAD</span>
+    <span class="n">recent</span> <span class="o">=</span> <span class="n">branch</span> <span class="o">--</span><span class="n">sort</span> <span class="n">committerdate</span> <span class="o">-</span><span class="n">v</span>
+
+    <span class="c1"># shorthands</span>
+    <span class="n">s</span> <span class="o">=</span> <span class="n">status</span>
+    <span class="n">co</span> <span class="o">=</span> <span class="n">checkout</span>
+    <span class="n">cc</span> <span class="o">=</span> <span class="n">commit</span>
+    <span class="n">cp</span> <span class="o">=</span> <span class="n">cherry</span><span class="o">-</span><span class="n">pick</span>
+    <span class="n">aa</span> <span class="o">=</span> <span class="n">add</span> <span class="o">-</span><span class="n">u</span>
+    <span class="n">who</span> <span class="o">=</span> <span class="n">shortlog</span> <span class="o">-</span><span class="n">n</span> <span class="o">-</span><span class="n">s</span> <span class="o">--</span><span class="n">no</span><span class="o">-</span><span class="n">merges</span>
+    <span class="n">cl</span> <span class="o">=</span> <span class="n">clean</span> <span class="o">-</span><span class="n">df</span>
+</pre></div>
+</div>
+</div>
 </div>
 
 
@@ -321,10 +389,8 @@
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="../aliases/" class="btn btn-neutral float-right" title="Useful Aliases" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
       
-      
-        <a href="../" class="btn btn-neutral float-left" title="Resources" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+        <a href="../sister-sites/" class="btn btn-neutral float-left" title="Sister Sites" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
       
     </div>
   
