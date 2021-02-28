@@ -8,7 +8,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>Sister Sites &mdash; SoMainline Docs  documentation</title>
+  <title>Kernel Compilation &mdash; SoMainline Docs  documentation</title>
   
 
   
@@ -37,7 +37,8 @@
   <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
     <link rel="index" title="Index" href="../../genindex/" />
     <link rel="search" title="Search" href="../../search/" />
-    <link rel="prev" title="Resources" href="../" /> 
+    <link rel="next" title="Resources" href="../../resources/" />
+    <link rel="prev" title="Porting" href="../../guides/porting/" /> 
 </head>
 
 <body class="wy-body-for-nav">
@@ -219,19 +220,19 @@
 <li class="toctree-l1"><a class="reference internal" href="../../guides/porting/">Porting</a></li>
 </ul>
 <p class="caption"><span class="caption-text">Reference</span></p>
-<ul>
-<li class="toctree-l1"><a class="reference internal" href="../../reference/compilation/">Kernel Compilation</a></li>
+<ul class="current">
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Kernel Compilation</a></li>
 </ul>
 <p class="caption"><span class="caption-text">Resources</span></p>
-<ul class="current">
-<li class="toctree-l1"><a class="reference internal" href="../">Overview</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="../#build-scripts">Build scripts</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../#flashing-latest-stock-firmware">Flashing latest stock firmware</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../#stock-firmware-dumps">Stock firmware dumps</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../#mainlining-notes">Mainlining Notes</a></li>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../resources/">Overview</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../resources/#build-scripts">Build scripts</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../resources/#flashing-latest-stock-firmware">Flashing latest stock firmware</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../resources/#stock-firmware-dumps">Stock firmware dumps</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../resources/#mainlining-notes">Mainlining Notes</a></li>
 </ul>
 </li>
-<li class="toctree-l1 current"><a class="current reference internal" href="#">Sister Sites</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../resources/sister-sites/">Sister Sites</a></li>
 </ul>
 
             
@@ -277,13 +278,13 @@
     
       <li><a href="../../">Docs</a> &raquo;</li>
         
-      <li>Sister Sites</li>
+      <li>Kernel Compilation</li>
     
     
       <li class="wy-breadcrumbs-aside">
         
             
-            <a href="../../_sources/resources/sister-sites.rst.txt" rel="nofollow"> View page source</a>
+            <a href="../../_sources/reference/compilation.rst.txt" rel="nofollow"> View page source</a>
           
         
       </li>
@@ -296,15 +297,49 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
             
-  <div class="section" id="sister-sites">
-<h1>Sister Sites<a class="headerlink" href="#sister-sites" title="Permalink to this headline">¶</a></h1>
-<ul class="simple">
-<li><a class="reference external" href="https://wiki.postmarketos.org/wiki/Main_Page">postmarketOS Wiki</a></li>
-<li><a class="reference external" href="https://docs.ubports.com/">UBPorts’ docs</a></li>
-<li><a class="reference external" href="https://docs.halium.org/en/latest/">Halium docs</a></li>
-<li><a class="reference external" href="https://opendevices.ix5.org">Open Devices Community Page</a></li>
-<li><a class="reference external" href="https://sx.ix5.org/info/">Open Devices Corner</a></li>
-</ul>
+  <div class="section" id="kernel-compilation">
+<h1>Kernel Compilation<a class="headerlink" href="#kernel-compilation" title="Permalink to this headline">¶</a></h1>
+<p>Packages for mainline compilation (GCC suite):</p>
+<div class="code highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">aarch64</span><span class="o">-</span><span class="n">linux</span><span class="o">-</span><span class="n">gnu</span><span class="o">-</span><span class="n">binutils</span>
+<span class="n">aarch64</span><span class="o">-</span><span class="n">linux</span><span class="o">-</span><span class="n">gnu</span><span class="o">-</span><span class="n">gcc</span>
+<span class="n">aarch64</span><span class="o">-</span><span class="n">linux</span><span class="o">-</span><span class="n">gnu</span><span class="o">-</span><span class="n">gdb</span>
+<span class="n">aarch64</span><span class="o">-</span><span class="n">linux</span><span class="o">-</span><span class="n">gnu</span><span class="o">-</span><span class="n">glibc</span>
+<span class="n">aarch64</span><span class="o">-</span><span class="n">linux</span><span class="o">-</span><span class="n">gnu</span><span class="o">-</span><span class="n">linux</span><span class="o">-</span><span class="n">api</span><span class="o">-</span><span class="n">headers</span>
+</pre></div>
+</div>
+<p>Clang packages</p>
+<div class="code highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">clang</span>
+<span class="n">clang</span><span class="o">-</span><span class="nb">format</span><span class="o">-</span><span class="nb">all</span><span class="o">-</span><span class="n">git</span>
+</pre></div>
+</div>
+<p>Kernel make command:</p>
+<div class="code highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">make</span> \
+<span class="n">ARCH</span><span class="o">=</span><span class="n">arm64</span> \
+<span class="n">CC</span><span class="o">=</span><span class="n">clang</span> \
+<span class="n">CROSS_COMPILE</span><span class="o">=</span><span class="n">aarch64</span><span class="o">-</span><span class="n">linux</span><span class="o">-</span><span class="n">gnu</span><span class="o">-</span> \
+<span class="n">CROSS_COMPILE_ARM32</span><span class="o">=</span><span class="n">arm</span><span class="o">-</span><span class="n">none</span><span class="o">-</span><span class="n">eabi</span><span class="o">-</span> \
+<span class="n">AR</span><span class="o">=</span><span class="n">llvm</span><span class="o">-</span><span class="n">ar</span> \
+<span class="n">NM</span><span class="o">=</span><span class="n">llvm</span><span class="o">-</span><span class="n">nm</span> \
+<span class="n">LD</span><span class="o">=</span><span class="n">ld</span><span class="o">.</span><span class="n">lld</span> \
+<span class="n">STRIP</span><span class="o">=</span><span class="n">llvm</span><span class="o">-</span><span class="n">strip</span> \
+<span class="n">OBJCOPY</span><span class="o">=</span><span class="n">llvm</span><span class="o">-</span><span class="n">objcopy</span> \
+<span class="n">OBJDUMP</span><span class="o">=</span><span class="n">llvm</span><span class="o">-</span><span class="n">objdump</span> \
+<span class="n">OBJSIZE</span><span class="o">=</span><span class="n">llvm</span><span class="o">-</span><span class="n">size</span> \
+<span class="n">READELF</span><span class="o">=</span><span class="n">llvm</span><span class="o">-</span><span class="n">readelf</span> \
+<span class="n">HOSTCC</span><span class="o">=</span><span class="n">clang</span> \
+<span class="n">HOSTCXX</span><span class="o">=</span><span class="n">clang</span><span class="o">++</span> \
+<span class="n">HOSTAR</span><span class="o">=</span><span class="n">llvm</span><span class="o">-</span><span class="n">ar</span> \
+<span class="n">HOSTLD</span><span class="o">=</span><span class="n">ld</span><span class="o">.</span><span class="n">lld</span> \
+<span class="n">menuconfig</span>
+</pre></div>
+</div>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">SoMainline shares one <code class="docutils literal notranslate"><span class="pre">defconfig</span></code> for all devices, so you do not need to specify one as you might be used to from downstream Android kernels.</p>
+</div>
+<p>For convenience, SoMainline also <a class="reference external" href="https://github.com/MarijnS95/mainline-kernel-prebuilt">provides a repo</a> to generate and update a
+“prebuilt” kernel that can be included from the Android device tree instead of
+using “inline” compilation.</p>
 </div>
 
 
@@ -315,8 +350,10 @@
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
+        <a href="../../resources/" class="btn btn-neutral float-right" title="Resources" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
       
-        <a href="../" class="btn btn-neutral float-left" title="Resources" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+        <a href="../../guides/porting/" class="btn btn-neutral float-left" title="Porting" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
       
     </div>
   

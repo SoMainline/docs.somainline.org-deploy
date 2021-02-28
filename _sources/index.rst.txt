@@ -32,6 +32,13 @@ SoMainline Docs
 .. toctree::
    :hidden:
    :maxdepth: 1
+   :caption: Reference
+
+   reference/compilation.rst
+
+.. toctree::
+   :hidden:
+   :maxdepth: 1
    :caption: Resources
 
    Overview <resources/index.rst>
@@ -42,6 +49,7 @@ Open Source Hardware Documentation
 ----------------------------------
 
 This repository is a place for all the knowledge about our SoCs and devices that we managed to discover through the porting process.
+For more information about the SoMainline team, please `visit our website <https://somainline.org>`_.
 
 Contributing
 ^^^^^^^^^^^^
@@ -53,6 +61,8 @@ By adding data to the knowledge base, you agree:
 * the knowledge has been obtained legally,
 * the data you submit is factually accurate,
 * that if the data in question is a register dump, magic sequence or a different non-open-coded information, you provide a way to reproduce the dump.
+
+We welcome you to contribute to these docs via Pull Requests at the `GitHub repo for docs.somainline.org <https://github.com/SoMainline/docs.somainline.org/>`_.
 
 License
 ^^^^^^^
