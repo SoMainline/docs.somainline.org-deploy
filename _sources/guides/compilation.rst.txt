@@ -54,4 +54,6 @@ Kernel make command, using ``clang``:
 
 For convenience, SoMainline also `provides a repo`_ to generate and update a "prebuilt" kernel that can be included from the Android device tree instead of using "inline" compilation. No prebuilts are shipped yet but they can be generated with the included ``./build-kernels-gcc.sh`` script, that runs about the same code as above.
 
+In case you are only interested in kernel development and do not want to incur the overhead of the AOSP build system, use the `Out-Of-Tree kernel build scripts <https://github.com/MarijnS95/oot>`_.
+
 .. _provides a repo: https://github.com/SoMainline/mainline-kernel-prebuilt
