@@ -23,24 +23,24 @@ Sony Xperia 10 II (PDX201)
      - Native Resolution
      - Quirks
    * - Main
-     - ?
-     - ?
-     - ?
+     - imx486
+     - Sony
+     - 4048x3032
      - .
    * - Wide
-     - ?
-     - ?
-     - ?
+     - s5k4h7yx
+     - Samsung
+     - 3280x2464
      - .
    * - Zoom
-     - ?
-     - ?
-     - ?
+     - s5k4h7yx
+     - Samsung
+     - 3280x2464
      - .
    * - Front
-     - ?
-     - ?
-     - ?
+     - s5k4h7yx
+     - Samsung
+     - 3280x2464
      - .
 
 .. list-table:: eMMC details
