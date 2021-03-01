@@ -7,4 +7,5 @@ SoC info goes here
    :maxdepth: 1
 
    fxtec/index.rst
+   oneplus/index.rst
    sony/index.rst
