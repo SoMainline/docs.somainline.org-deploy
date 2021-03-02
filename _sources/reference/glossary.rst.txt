@@ -1,0 +1,13 @@
+Glossary
+========
+
+Glossary of names, acronyms, subsystems and more.
+
+.. Keep this sorted alphabetically!
+
+====================  ====================================  ========================================
+Short                 Full                                  Meaning
+====================  ====================================  ========================================
+SMD                   Shared Memory Driver                  Qualcomm-specific
+RPM                   Resource Package Manager              Qualcomm-specific
+====================  ====================================  ========================================
