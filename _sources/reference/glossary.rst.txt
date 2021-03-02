@@ -8,6 +8,6 @@ Glossary of names, acronyms, subsystems and more.
 ====================  ====================================  ========================================
 Short                 Full                                  Meaning
 ====================  ====================================  ========================================
-SMD                   Shared Memory Driver                  Qualcomm-specific
 RPM                   Resource Package Manager              Qualcomm-specific
+SMD                   Shared Memory Driver                  Qualcomm-specific
 ====================  ====================================  ========================================
