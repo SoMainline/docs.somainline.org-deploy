@@ -6,25 +6,42 @@ Glossary of names, acronyms, subsystems and more.
 .. Keep this sorted alphabetically!
 
 ====================  ======================================= ========================================
-Short                 Full                                    Meaning
+Short                 Full                                    Owner
 ====================  ======================================= ========================================
+ADPL                  Advanced Data Path Logging              Qualcomm-specific
 aDSP                  Audio Digital Signal Processor          Qualcomm-specific
 AMSS                  Advanced Mobile Subscriber Software     Qualcomm-specific
 APQ                   Application Processor Qualcomm          Qualcomm-specific
+AXI_                  Advanced eXtensible Interface
 BAM                   Bus Access Module                       Qualcomm-specific
+BLSP                  BAM Low Speed Peripherals               Qualcomm-specific
+CABC/CABL             Content Adaptive BackLight/Control      Qualcomm-specific
+CCI                   Camera Cell Index                       Qualcomm-specific
 CDP                   Core Development Platform               Qualcomm-specific
 cDSP                  Compute Digital Signal Processor        Qualcomm-specific
 CDT                   Configuration Data Table                Generic
 CE                    Crypto Engine                           Generic
+COPP                  Common Object PostProcessing            Qualcomm-specific
+CSI2_                 Camera Serial Interface                 MIPI_
+CSID                  `CSI <CSI2>`_ Decoder                   MIPI_ or Qcom?
+DSI                   Display Serial Interface                MIPI_
+DSPP                  Destination Surface Processor Pipes     Qualcomm-specific
 EDL                   Emergency Download Mode                 Qualcomm-specific
 FFBM                  Fast Factory Boot Mode                  Qualcomm-specific??
 FSG                   FileSystem Gold                         Qualcomm-specific
 GDSC                  Global Distributed Switch Controller    Qualcomm-specific
+GENI_                 GEneric INterface                       Qualcomm-specific
 GSBI                  General Serial Bus Interface            Qualcomm-specific
 IPA                   Internet Packet Accelerator             Qualcomm-specific
+LABIBB                LCD/AMOLED Boost, Inverting Buck-Boost  Qcom?
 LK                    LittleKernel (bootloader)               Project name
+LLCC                  Low Level Cache Controller              Qualcomm-specific
+LM                    Layer Mixer                             Qualcomm-specific
 LPASS                 Low Power Audio SubSystem               Qualcomm-specific
-MDSS                  Mobile Display SubSystem                Qualcomm-specific
+LSC                   Lens Shading Compensation/Correction    Qualcomm-specific?
+MDSS                  Mobile/Multimedia Display SubSystem     Qualcomm-specific
+_`MIPI`               Mobile Industry Processor Interface
+MMCC                  MultiMedia Clock & Reset Controller     Qualcomm-specific
 MMSS                  MultiMedia SubSystem                    Qualcomm-specific
 MPM                   MSM/Modem Power Manager                 Qualcomm-specific
 MSA                   Modem Self Authentication               Qualcomm-specific
@@ -40,13 +57,16 @@ QFPROM                Qualcomm Fuse Programmable ROM          Qualcomm-specific
 QHEE                  Qcom Hypervisor Execution Environment   Qualcomm-specific
 QMI                   Qualcomm Messaging Interface            Qualcomm-specific
 QRD                   Qualcomm Reference Design               Qualcomm-specific
-QSAPPS                Qualcomm Secure Apps                    QUalcomm-specific
+QSAPPS                Qualcomm Secure Apps                    Qualcomm-specific
 QSD                   Qualcomm SnapDragon                     Qualcomm-specific
-QUP                   Qualcomm Universal Peripheral engine    Qualcomm-specific
+QUP_                  Qualcomm Universal Peripheral           Qualcomm-specific
+RDI                   Raw Dump Interface                      Qualcomm-specific
 RPM                   Resource Package Manager                Qualcomm-specific
 SBL                   Secondary BootLoader                    Generic
 SCM                   Secure Channel Manager                  Qualcomm-specific
 SCR                   Secure Configuration Register           ARM
+SDE                   SnapDragon Display Engine               Qualcomm-specific
+SE_                   Serial Engine                           Qualcomm-specific??
 SFR                   Subsystem-restart Failure Reason        Qualcomm-specific
 SLIMBUS               Serial Low-power Inter-chip Media Bus   Qualcomm-specific
 SMC                   Secure Monitor Call                     ARM
@@ -54,9 +74,11 @@ SMD                   Shared Memory Driver                    Qualcomm-specific
 SMEM                  Shared MEMory                           Qualcomm-specific
 SMP2P                 Shared Memory Point-to-Point            Qualcomm-specific
 SMSM                  Shared Memory State Machine             Qualcomm-specific
+SOF                   Start Of Frame                          Generic?
 SPI                   Serial Peripheral Interface             Bus, Generic
 SPM                   Subsystem Power Management              Qualcomm-specific
 SPS                   Smart Peripheral System                 Qualcomm-specific
+SSPP                  Source Surface Processor Pipe(s)        Qualcomm-specific
 SSR                   SubSystem Restart                       Qualcomm-specific
 TLMM                  Top Level Mode Multiplexer              ??Generic??
 TZBSP                 TrustZone Board Support Package         Qualcomm-specific??
@@ -75,4 +97,11 @@ XBL                   eXtensible BootLoader                   Qualcomm-specific
 See also:
 
 * `pmOS wiki: Qualcomm Glossary <https://wiki.postmarketos.org/wiki/Qualcomm_Glossary>`_
-* `sx.ix5.org: Sony/Qualcomm Subsystems <https://sx.ix5.org/info/post/sony-qualcomm-device-subsystems/>`_
+* `sx.ix5.org: Sony/Qualcomm Subsystems <https://sx.ix5.org/info/post/sony-Qualcomm-device-subsystems/>`_
+* `Android Display Overview <https://developer.qualcomm.com/download/db410c/android-display-overview.pdf>`_
+
+.. _AXI: https://en.wikipedia.org/wiki/Advanced_eXtensible_Interface
+.. _CSI2: https://www.mipi.org/specifications/csi-2
+.. _GENI: https://www.kernel.org/doc/Documentation/devicetree/bindings/soc/qcom/qcom%2Cgeni-se.txt
+.. _QUP: https://www.kernel.org/doc/Documentation/devicetree/bindings/soc/qcom/qcom%2Cgeni-se.txt
+.. _SE: https://www.kernel.org/doc/Documentation/devicetree/bindings/soc/qcom/qcom%2Cgeni-se.txt
