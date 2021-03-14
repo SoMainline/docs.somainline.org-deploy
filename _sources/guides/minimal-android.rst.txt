@@ -66,7 +66,7 @@ Copy init files for regular boot and recovery:
         $(LOCAL_PATH)/init.<device>.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.<device>.rc \
         $(LOCAL_PATH)/init.usb.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.usb.rc
 
-Graphics:
+Graphics (with GPU working):
 
 .. code::
 
@@ -93,6 +93,29 @@ Graphics:
         hwcomposer.drm:64
     PRODUCT_PROPERTY_OVERRIDES += \
         ro.hardware.hwcomposer=drm
+
+Graphics (CPU-rendered):
+
+.. code::
+
+    PRODUCT_PROPERTY_OVERRIDES += \
+        debug.sf.no_hw_vsync=1 \
+        ro.opengles.version=131072 \
+        ro.hardware.egl=swiftshader
+    PRODUCT_PACKAGES += \
+        gralloc.devicename \
+        hwcomposer.devicename \
+        libEGL_swiftshader \
+        libGLESv1_CM_swiftshader \
+        libGLESv2_swiftshader
+    PRODUCT_PACKAGES += \
+        android.hardware.drm@1.0-impl \
+        android.hardware.drm@1.0-service \
+        android.hardware.graphics.allocator@2.0-impl \
+        android.hardware.graphics.allocator@2.0-service \
+        android.hardware.graphics.composer@2.2-impl \
+        android.hardware.graphics.composer@2.2-service \
+        android.hardware.graphics.mapper@2.0-impl-2.1
 
 Cut down build times by trying to build mostly 64-bit:
 

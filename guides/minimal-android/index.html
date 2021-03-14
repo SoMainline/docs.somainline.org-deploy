@@ -362,7 +362,7 @@ porting conveniences:</p>
     $(LOCAL_PATH)/init.usb.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.usb.rc
 </pre></div>
 </div>
-<p>Graphics:</p>
+<p>Graphics (with GPU working):</p>
 <div class="code highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">BOARD_GPU_DRIVERS</span> <span class="p">:</span><span class="o">=</span> <span class="n">freedreno</span>
 <span class="n">PRODUCT_PROPERTY_OVERRIDES</span> <span class="o">+=</span> \
     <span class="n">ro</span><span class="o">.</span><span class="n">hardware</span><span class="o">.</span><span class="n">hwcomposer</span><span class="o">=</span><span class="n">drm</span>
@@ -386,6 +386,27 @@ porting conveniences:</p>
     <span class="n">hwcomposer</span><span class="o">.</span><span class="n">drm</span><span class="p">:</span><span class="mi">64</span>
 <span class="n">PRODUCT_PROPERTY_OVERRIDES</span> <span class="o">+=</span> \
     <span class="n">ro</span><span class="o">.</span><span class="n">hardware</span><span class="o">.</span><span class="n">hwcomposer</span><span class="o">=</span><span class="n">drm</span>
+</pre></div>
+</div>
+<p>Graphics (CPU-rendered):</p>
+<div class="code highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">PRODUCT_PROPERTY_OVERRIDES</span> <span class="o">+=</span> \
+    <span class="n">debug</span><span class="o">.</span><span class="n">sf</span><span class="o">.</span><span class="n">no_hw_vsync</span><span class="o">=</span><span class="mi">1</span> \
+    <span class="n">ro</span><span class="o">.</span><span class="n">opengles</span><span class="o">.</span><span class="n">version</span><span class="o">=</span><span class="mi">131072</span> \
+    <span class="n">ro</span><span class="o">.</span><span class="n">hardware</span><span class="o">.</span><span class="n">egl</span><span class="o">=</span><span class="n">swiftshader</span>
+<span class="n">PRODUCT_PACKAGES</span> <span class="o">+=</span> \
+    <span class="n">gralloc</span><span class="o">.</span><span class="n">devicename</span> \
+    <span class="n">hwcomposer</span><span class="o">.</span><span class="n">devicename</span> \
+    <span class="n">libEGL_swiftshader</span> \
+    <span class="n">libGLESv1_CM_swiftshader</span> \
+    <span class="n">libGLESv2_swiftshader</span>
+<span class="n">PRODUCT_PACKAGES</span> <span class="o">+=</span> \
+    <span class="n">android</span><span class="o">.</span><span class="n">hardware</span><span class="o">.</span><span class="n">drm</span><span class="nd">@1</span><span class="o">.</span><span class="mi">0</span><span class="o">-</span><span class="n">impl</span> \
+    <span class="n">android</span><span class="o">.</span><span class="n">hardware</span><span class="o">.</span><span class="n">drm</span><span class="nd">@1</span><span class="o">.</span><span class="mi">0</span><span class="o">-</span><span class="n">service</span> \
+    <span class="n">android</span><span class="o">.</span><span class="n">hardware</span><span class="o">.</span><span class="n">graphics</span><span class="o">.</span><span class="n">allocator</span><span class="nd">@2</span><span class="o">.</span><span class="mi">0</span><span class="o">-</span><span class="n">impl</span> \
+    <span class="n">android</span><span class="o">.</span><span class="n">hardware</span><span class="o">.</span><span class="n">graphics</span><span class="o">.</span><span class="n">allocator</span><span class="nd">@2</span><span class="o">.</span><span class="mi">0</span><span class="o">-</span><span class="n">service</span> \
+    <span class="n">android</span><span class="o">.</span><span class="n">hardware</span><span class="o">.</span><span class="n">graphics</span><span class="o">.</span><span class="n">composer</span><span class="nd">@2</span><span class="o">.</span><span class="mi">2</span><span class="o">-</span><span class="n">impl</span> \
+    <span class="n">android</span><span class="o">.</span><span class="n">hardware</span><span class="o">.</span><span class="n">graphics</span><span class="o">.</span><span class="n">composer</span><span class="nd">@2</span><span class="o">.</span><span class="mi">2</span><span class="o">-</span><span class="n">service</span> \
+    <span class="n">android</span><span class="o">.</span><span class="n">hardware</span><span class="o">.</span><span class="n">graphics</span><span class="o">.</span><span class="n">mapper</span><span class="nd">@2</span><span class="o">.</span><span class="mi">0</span><span class="o">-</span><span class="n">impl</span><span class="o">-</span><span class="mf">2.1</span>
 </pre></div>
 </div>
 <p>Cut down build times by trying to build mostly 64-bit:</p>
