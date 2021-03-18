@@ -31,3 +31,8 @@ Mainlining Notes
 * `SDM660 Mainlining article <https://wiki.postmarketos.org/wiki/Qualcomm_Snapdragon_660_(SDM660)>`_
 * `Notes for Linux on mobile in general <https://github.com/SoMainline/LinuxMobileNotes>`_
 * `Common Mainline porting issues and fixes <https://github.com/SoMainline/MainlineAndroidPorting>`_
+
+Identifiers, Codenames and More
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+* Mapping of SoC to SoC-ID in `kernel socinfo.c <https://github.com/torvalds/linux/blob/dc0337999d87a5e749ef1ac0bcc1a06d2a3f9ec0/drivers/soc/qcom/socinfo.c#L186-L260>`_
