@@ -7,6 +7,7 @@ SoC information goes here
    :maxdepth: 1
 
    sony/index.rst
+   xiaomi/index.rst
 
 .. list-table:: Camera HW
    :header-rows: 1
@@ -59,3 +60,4 @@ SoC information goes here
      - v2.
      - 1x13 + 1x8 (v3/3.1) / 1x16 (earlier) sensors
      - .
+
