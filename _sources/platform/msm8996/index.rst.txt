@@ -52,6 +52,10 @@ SoC information goes here
      - v2.1.44
      - 1
      - .
+   * - IPA
+     - v2.5 (hw rev 5)
+     - 1
+     - .
    * - Qualcomm Crypto Engine (QCE)
      - v5.3.1
      - 1
