@@ -19,6 +19,7 @@ CABC/CABL             Content Adaptive BackLight/Control       Display          
 CCI                   Camera Cell Index                        Camera           Qualcomm-specific
 CDP                   Core Development Platform                                 Qualcomm-specific
 cDSP                  Compute Digital Signal Processor                          Qualcomm-specific
+CDP                   Core Development Platform                                 Generic
 CDT                   Configuration Data Table                                  Generic
 CE                    Crypto Engine                                             Generic
 COPP                  Common Object PostProcessing                              Qualcomm-specific
