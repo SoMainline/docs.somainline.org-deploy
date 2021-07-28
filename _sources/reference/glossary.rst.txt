@@ -11,7 +11,9 @@ Short                 Full                                     Context          
 ADPL                  Advanced Data Path Logging               Modem?           Qualcomm-specific
 aDSP                  Audio Digital Signal Processor           Audio            Qualcomm-specific
 AMSS                  Advanced Mobile Subscriber Software                       Qualcomm-specific
+AOSS                  Always-On SubSystem                                       Qualcomm-specific
 APQ                   Application Processor Qualcomm                            Qualcomm-specific
+APSS                  Application Processor SubSystem                           Qualcomm-specific
 AXI_                  Advanced eXtensible Interface
 BAM                   Bus Access Module                                         Qualcomm-specific
 BLSP                  BAM Low Speed Peripherals                                 Qualcomm-specific
@@ -19,12 +21,12 @@ CABC/CABL             Content Adaptive BackLight/Control       Display          
 CCI                   Camera Cell Index                        Camera           Qualcomm-specific
 CDP                   Core Development Platform                                 Qualcomm-specific
 cDSP                  Compute Digital Signal Processor                          Qualcomm-specific
-CDP                   Core Development Platform                                 Generic
 CDT                   Configuration Data Table                                  Generic
 CE                    Crypto Engine                                             Generic
 COPP                  Common Object PostProcessing                              Qualcomm-specific
 CSI2_                 Camera Serial Interface                  Camera           MIPI_
 CSID                  `CSI <CSI2>`_ Decoder                    Camera           MIPI_ or Qcom?
+DPM                   Data Port Mapper                         Modem            Qualcomm-specific
 DSI                   Display Serial Interface                 Display          MIPI_
 DSPP                  Destination Surface Processor Pipes      Display          Qualcomm-specific
 EDL                   Emergency Download Mode                                   Qualcomm-specific
@@ -38,6 +40,7 @@ LABIBB                LCD/AMOLED Boost, Inverting Buck-Boost   Display          
 LK                    LittleKernel (bootloader)                                 Project name
 LLCC                  Low Level Cache Controller                                Qualcomm-specific
 LM                    Layer Mixer                                               Qualcomm-specific
+LMh                   Limits Management hardware                                Qualcomm-specific
 LPASS                 Low Power Audio SubSystem                                 Qualcomm-specific
 LSC                   Lens Shading Compensation/Correction                      Qualcomm-specific?
 MDSS                  Mobile/Multimedia Display SubSystem                       Qualcomm-specific
