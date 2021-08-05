@@ -15,6 +15,7 @@ SoMainline Docs
    platform/msm8998/index.rst
    platform/sc7180/index.rst
    platform/sc7280/index.rst
+   platform/sc8180x/index.rst
    platform/sdm630/index.rst
    platform/sdm636/index.rst
    platform/sdm660/index.rst
