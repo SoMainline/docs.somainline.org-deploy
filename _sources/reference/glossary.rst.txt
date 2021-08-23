@@ -64,6 +64,7 @@ QRD                   Qualcomm Reference Design                                 
 QSAPPS                Qualcomm Secure Apps                                        Qualcomm-specific
 QSD                   Qualcomm SnapDragon                                         Qualcomm-specific
 QUP_                  Qualcomm Universal Peripheral               Serial          Qualcomm-specific
+RCGwR                 Root Clock Generator with Ramp-controller   Clocks/CPU      Qualcomm-specific
 RDI                   Raw Dump Interface                          Camera          Qualcomm-specific
 RPM                   Resource Package Manager                                    Qualcomm-specific
 SBL                   Secondary BootLoader                                        Generic
