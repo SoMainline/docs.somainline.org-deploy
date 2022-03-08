@@ -19,10 +19,11 @@ Flashing latest stock firmware
   (`releases mirror <https://sx.ix5.org/files/flashtool/>`_)
 * `Sony Flashtool "Emma" <https://developer.sony.com/develop/open-devices/get-started/flash-tool>`_ (Windows-only)
 
-Stock firmware dumps
-^^^^^^^^^^^^^^^^^^^^
+.. TODO Site has been seized
+.. Stock firmware dumps
+.. ^^^^^^^^^^^^^^^^^^^^
 
-`Sony dumps <https://git.rip/dumps/sony>`_
+.. `Sony dumps <https://git.rip/dumps/sony>`_
 
 Mainlining Notes
 ^^^^^^^^^^^^^^^^
