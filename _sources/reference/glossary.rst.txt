@@ -102,7 +102,7 @@ XBL                   eXtensible BootLoader                                     
 See also:
 
 * `pmOS wiki: Qualcomm Glossary <https://wiki.postmarketos.org/wiki/Qualcomm_Glossary>`_
-* `sx.ix5.org: Sony/Qualcomm Subsystems <https://sx.ix5.org/info/post/sony-Qualcomm-device-subsystems/>`_
+* `sx.ix5.org: Sony/Qualcomm Subsystems <https://sx.ix5.org/info/post/sony-qualcomm-device-subsystems/>`_
 * `Android Display Overview <https://developer.qualcomm.com/download/db410c/android-display-overview.pdf>`_
 
 .. _AXI: https://en.wikipedia.org/wiki/Advanced_eXtensible_Interface
