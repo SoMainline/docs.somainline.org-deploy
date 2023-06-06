@@ -11,5 +11,7 @@ This SoC is one giant rebrand party (450/625/626/632/APQ8053).
 
    * - Release kernel version
      - CAF branch
+   * - 4.9
+     - LA.UM.*.6.2.r1
    * - 3.18
-     - LA.UM
+     - LA.UM.*.6.r1

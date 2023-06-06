@@ -6,6 +6,7 @@ SoMainline Docs
    :maxdepth: 1
    :caption: Platforms
 
+   platform/mt6795/index.rst
    platform/msm8953/index.rst
    platform/msm8956/index.rst
    platform/msm8974/index.rst
